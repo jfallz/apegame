@@ -15,9 +15,12 @@ public class CartMover : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.AddForce(Vector3.forward * force, ForceMode.Impulse);
     }
+
     // Update is called once per frame
     private void Update() {
         if(applyForce)
             Force();
+          
+        
     }
 }
