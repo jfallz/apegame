@@ -5,22 +5,25 @@ using UnityEngine;
 public class CartMover : MonoBehaviour
 {
     [SerializeField] float force = 0f;
-    [SerializeField] bool applyForce = false;
+    [SerializeField] float maxSpeed = 0f;
+
+    public float acceleration = 1f;
     private Rigidbody rb;
 
 
-    private void Force() {
-        applyForce = false;
-
+    private void Force(bool forwards) {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.forward * force, ForceMode.Impulse);
+        if(forwards)
+            rb.AddForce(Vector3.forward * acceleration, ForceMode.Acceleration);   // move forwards
+        else
+            rb.AddForce((Vector3.forward - (Vector3.forward*2)) * acceleration, ForceMode.Acceleration); // move backwards
     }
 
     // Update is called once per frame
     private void Update() {
-        if(applyForce)
-            Force();
-          
-        
+        if(Input.GetKey(KeyCode.D)) // if pressing d
+            Force(true);
+        else if(Input.GetKey(KeyCode.A))    // if pressing a
+            Force(false);
     }
 }
