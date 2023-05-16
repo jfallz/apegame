@@ -7,7 +7,8 @@ public class CartMover : MonoBehaviour
     [SerializeField] float force = 0f;
     [SerializeField] float maxSpeed = 0f;
 
-    public float acceleration = 1f;
+    [SerializeField] public float acceleration = 1f;
+
     private Rigidbody rb;
 
 
