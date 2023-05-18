@@ -17,9 +17,10 @@ public class GameManager : MonoBehaviour
             textMeshPro.text = "Distance: " + distanceTraveled;
         }
         if(restart) {
-            Destroy(GameObject.FindWithTag("GameController"));
             Destroy(GameObject.FindWithTag("Cart"));
             Destroy(GameObject.FindWithTag("Player"));
+            Destroy(GameObject.FindWithTag("GameController"));
+            
             Instantiate(prefabToInstantiate, spawnPoint.position, Quaternion.identity);
             currency += Mathf.RoundToInt(distanceTraveled * .75f);
             distanceTraveled = 0;
