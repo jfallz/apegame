@@ -11,7 +11,7 @@ public class TriggerStart : MonoBehaviour
 
     public void OnTriggerEnter(Collider a)
     {
-        if(!a.CompareTag("Player"))
+        if(!a.CompareTag("Cart"))
             return;
         GameObject other = GameObject.FindWithTag("Player");
         Debug.Log(other.gameObject.name);
