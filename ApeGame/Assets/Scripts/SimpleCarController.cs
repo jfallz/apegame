@@ -14,7 +14,7 @@ public class SimpleCarController : MonoBehaviour {
     public List<AxleInfo> axleInfos; 
     public float maxMotorTorque;
     public float maxSteeringAngle;
-    public float torqueAmount = 1f;
+    public Vector3 torque = new Vector3(.07f, 0f, 0f);
      
     // finds the corresponding visual wheel
     // correctly applies the transform
@@ -37,16 +37,15 @@ public class SimpleCarController : MonoBehaviour {
      public void TurnLeft() {
         Rigidbody rb = GetComponent<Rigidbody>();
         // Calculate the torque vector based on the desired torque amount and the object's up direction
-        Vector3 torque = new Vector3((torqueAmount - (2*torqueAmount)), 0f, 0f);
-        rb.angularVelocity = torque;
+        //Vector3 torque = new Vector3(-.07f, 0f, 0f);
+        rb.angularVelocity += -1 * torque;
      }
 
      public void TurnRight() {
         
         Rigidbody rb = GetComponent<Rigidbody>();
         // Calculate the torque vector based on the desired torque amount and the object's up direction
-        Vector3 torque = new Vector3(torqueAmount, 0f, 0f);
-        rb.angularVelocity = torque;
+        rb.angularVelocity += torque;
      }
 
     public void FixedUpdate()
@@ -57,9 +56,10 @@ public class SimpleCarController : MonoBehaviour {
             rb.velocity += force;
         }
 
-        if(Input.GetKey(KeyCode.D)) {
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 3f);
+        if(Input.GetKey(KeyCode.D) && !isGrounded) {
             TurnRight();
-        } else if(Input.GetKey(KeyCode.A)) {
+        } else if(Input.GetKey(KeyCode.A) && !isGrounded) {
             TurnLeft();
         }
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
