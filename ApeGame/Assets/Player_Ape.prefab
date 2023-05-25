@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3569545823096092760}
   - component: {fileID: 3569545823096092757}
   - component: {fileID: 3569545823096092758}
-  - component: {fileID: 3569545823096092759}
   - component: {fileID: 5329152593175151663}
+  - component: {fileID: 8318038684613237682}
   m_Layer: 0
   m_Name: Player_Ape
   m_TagString: Player
@@ -85,20 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3569545823096092759
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3569545823096092761}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5329152593175151663
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,3 +101,17 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 98
   m_CollisionDetection: 0
+--- !u!136 &8318038684613237682
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3569545823096092761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

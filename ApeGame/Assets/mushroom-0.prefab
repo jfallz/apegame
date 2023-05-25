@@ -92,6 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6297456416772310378}
+  - component: {fileID: 1676742799990070082}
+  - component: {fileID: 5720742592839513580}
   m_Layer: 0
   m_Name: mushroom-0
   m_TagString: Untagged
@@ -116,6 +118,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1676742799990070082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642492320665542608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.33, y: 3.284563, z: 13.594618}
+  m_Center: {x: 0, y: 2.098361, z: -0.6475496}
+--- !u!114 &5720742592839513580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642492320665542608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026094dd7ad099d40af219db62702224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upBoost: 55
+  forwardBoost: 55
 --- !u!1001 &8337822538323188366
 PrefabInstance:
   m_ObjectHideFlags: 0

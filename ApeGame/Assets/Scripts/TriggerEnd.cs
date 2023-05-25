@@ -16,7 +16,6 @@ public class TriggerEnd : MonoBehaviour
     public void OnTriggerEnter(Collider a)
     {
         string collidedObjectTag = a.gameObject.tag;
-        Debug.Log("Collided object tag: " + collidedObjectTag);
         if(!a.CompareTag("Cart"))
             return;
 
