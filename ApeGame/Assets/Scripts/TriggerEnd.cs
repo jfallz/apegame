@@ -27,6 +27,7 @@ public class TriggerEnd : MonoBehaviour
         Rigidbody otherRb = a.GetComponentInParent<Rigidbody>();
 
         if(cartObject != null) {
+            Vector3 vel = otherRb.velocity;
             Destroy(cartObject);
             Destroy(player);
 
@@ -37,8 +38,8 @@ public class TriggerEnd : MonoBehaviour
 
             newPlayer = Instantiate(playerPrefab, playerPos, Quaternion.identity);
             Rigidbody rb = newPlayer.GetComponent<Rigidbody>();
-            Vector3 vel = otherRb.velocity;
-            rb.velocity = vel * 1.25f; // this will adjust how much velocity is kept  after  cart explosion
+            rb.velocity = vel * 1.25f;
+
             for(int i = 0; i < tempCart.transform.childCount; ++i) {
                 GameObject child = tempCart.transform.GetChild(i).gameObject;
                 Rigidbody childRb = child.GetComponent<Rigidbody>();
