@@ -43,7 +43,7 @@ MonoBehaviour:
     value: 0
   toneCurveGamma:
     overrideState: 0
-    value: 1
+    value: 0.73
   ldrLut:
     overrideState: 0
     value: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 1
+    overrideState: 0
     value: 0
   tint:
     overrideState: 0
@@ -71,10 +71,10 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 0.92
+    value: 0.86
   contrast:
     overrideState: 1
-    value: 6.4
+    value: 6
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -110,7 +110,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0}
   gain:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 1, y: 0.81018674, z: 0.9314569, w: 0}
   masterCurve:
     overrideState: 0
     value:
@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
   m_Name: AmbientOcclusion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1399,10 +1399,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.321
+    value: 0.42
   color:
     overrideState: 1
-    value: {r: 0.06323426, g: 0.14401837, b: 0.46226418, a: 1}
+    value: {r: 0.15792987, g: 0.19536328, b: 0.3679245, a: 1}
   ambientOnly:
     overrideState: 0
     value: 1
@@ -1439,7 +1439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
