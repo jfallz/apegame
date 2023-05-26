@@ -14,9 +14,7 @@ public class Bounce : MonoBehaviour
 
     public void OnTriggerEnter(Collider a)
     {
-        if(boosted)
-            return;
-        boosted = true;
+        // boosted = true;
         Rigidbody rb;
         if(a.CompareTag("Player")) {
             rb = a.GetComponent<Rigidbody>();
@@ -37,13 +35,13 @@ public class Bounce : MonoBehaviour
 
     }
 
-    public void Update() {
-        if(boosted) {
-            timer += Time.deltaTime;
-                if(timer >= desiredTime) {
-                    boosted = false;
-                    timer = 0f;
-                }
-        }
-    }
+    // public void Update() {
+    //     if(boosted) {
+    //         timer += Time.deltaTime;
+    //             if(timer >= desiredTime) {
+    //                 boosted = false;
+    //                 timer = 0f;
+    //             }
+    //     }
+    // }
 }
