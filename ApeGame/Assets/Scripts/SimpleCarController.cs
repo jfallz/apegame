@@ -50,11 +50,11 @@ public class SimpleCarController : MonoBehaviour {
 
     public void FixedUpdate()
     {
-        if(Input.GetMouseButtonDown(0)) {
-            Rigidbody rb = GetComponent<Rigidbody>();
-            Vector3 force = new Vector3(0f, 0f, 20f);
-            rb.velocity += force;
-        }
+        // if(Input.GetMouseButtonDown(0)) {
+        //     Rigidbody rb = GetComponent<Rigidbody>();
+        //     Vector3 force = new Vector3(0f, 0f, 20f);
+        //     rb.velocity += force;
+        // }
 
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 3f);
         if(Input.GetKey(KeyCode.D) && !isGrounded) {

@@ -57,9 +57,9 @@ public class TriggerEnd : MonoBehaviour
                 timer += Time.deltaTime;
                 if(timer >= desiredTime) {
                     TriggerStart.timer = false;
-                    print("Telling GameManager to restart");
+                    print("Telling GameManager that we're dead");
                     moving = false;
-                    GameManager.restart = true;
+                    GameManager.dead = true;
                 }
             } else {
                 timer = 0f;
