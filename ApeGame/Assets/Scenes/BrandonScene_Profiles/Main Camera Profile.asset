@@ -31,7 +31,7 @@ MonoBehaviour:
     value: 0
   toneCurveToeLength:
     overrideState: 1
-    value: 0.164
+    value: 0.312
   toneCurveShoulderStrength:
     overrideState: 1
     value: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
     value: -0.8
   saturation:
     overrideState: 0
-    value: 3
+    value: -3.9
   brightness:
     overrideState: 0
     value: 0
@@ -103,14 +103,19 @@ MonoBehaviour:
     overrideState: 0
     value: 100
   lift:
-    overrideState: 1
-    value: {x: 1, y: 0.9931378, z: 0.9631919, w: 0}
+    overrideState: 0
+    value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: 0}
   gain:
+<<<<<<< HEAD
     overrideState: 1
     value: {x: 1, y: 0.81018674, z: 0.9314569, w: 0}
+=======
+    overrideState: 0
+    value: {x: 1, y: 1, z: 1, w: 0}
+>>>>>>> parent of 68e723d (LIGHTINGFPS FIX)
   masterCurve:
     overrideState: 0
     value:
