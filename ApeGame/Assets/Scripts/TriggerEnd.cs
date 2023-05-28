@@ -6,6 +6,7 @@ public class TriggerEnd : MonoBehaviour
 {
     public GameObject fracturedPrefab;
     public GameObject playerPrefab;
+    public GameObject GameMan;
 
     private float desiredTime = 1f;
     private float timer = 0f;
@@ -59,7 +60,8 @@ public class TriggerEnd : MonoBehaviour
                     TriggerStart.timer = false;
                     print("Telling GameManager that we're dead");
                     moving = false;
-                    GameManager.dead = true;
+                    GameManager script = GameMan.GetComponent<GameManager>();
+                    script.dead = true;
                 }
             } else {
                 timer = 0f;

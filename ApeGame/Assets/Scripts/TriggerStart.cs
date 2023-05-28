@@ -6,6 +6,7 @@ public class TriggerStart : MonoBehaviour
 {
     public int init_distance;
     public TMPro.TextMeshProUGUI textMeshPro;
+    public GameObject GameMan;
 
     public static bool timer = false;
 
@@ -23,7 +24,8 @@ public class TriggerStart : MonoBehaviour
         if(timer) {
             GameObject other = GameObject.FindWithTag("Player");
             int d = Mathf.RoundToInt(other.gameObject.transform.position.z) - init_distance;
-            GameManager.distanceTraveled = d;
+            GameManager script = GameMan.GetComponent<GameManager>();
+            script.distanceTraveled = d;
         }
            // textMeshPro = GameObject.Find("DISTANCE").GetComponent<TMPro.TextMeshProUGUI>();
             //textMeshPro.text = "Distance: " + distance;

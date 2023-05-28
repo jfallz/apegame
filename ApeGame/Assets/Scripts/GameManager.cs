@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
-    public static int distanceTraveled;
-    public static float currency;
+    public int distanceTraveled;
+    public float currency;
     public Transform spawnPoint;
     public GameObject DeathMenu;
     public GameObject Shop;
     public GameObject prefabToInstantiate;
-    public static bool dead = false; // used to show player shop or restart option (They Died lol)
-    public static bool restart = false; // if true, will restart the player and then reset bool to false
+    public bool dead = false; // used to show player shop or restart option (They Died lol)
+    public bool restart = false; // if true, will restart the player and then reset bool to false
     
 
     public void Update() {
@@ -34,9 +33,9 @@ public class GameManager : MonoBehaviour
 
     public void ShopMenu() {
         DeathMenu.SetActive(false);
+        Shop.GetComponent<ShopManager>().Refresh();
         Shop.SetActive(true);
     }
-
 
     public void Restart() {
             // tell gamemanager we're no longer dead
