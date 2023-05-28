@@ -29,7 +29,14 @@ public class GameManager : MonoBehaviour
 
     public void Death() {
         DeathMenu.SetActive(true);
+        dead = false;
     }
+
+    public void ShopMenu() {
+        DeathMenu.SetActive(false);
+        Shop.SetActive(true);
+    }
+
 
     public void Restart() {
             // tell gamemanager we're no longer dead
