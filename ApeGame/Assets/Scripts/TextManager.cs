@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TextManager : MonoBehaviour
 {
-    void Update()
+
+    void FixedUpdate()
     {
         TMPro.TextMeshProUGUI d = GameObject.Find("DISTANCE").GetComponent<TMPro.TextMeshProUGUI>();
         d.text = "Distance: " + GameManager.distanceTraveled;

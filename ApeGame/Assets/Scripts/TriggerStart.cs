@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TriggerStart : MonoBehaviour
 {
+    public GameObject GameMan;
     public int init_distance;
     public TMPro.TextMeshProUGUI textMeshPro;
-    public GameObject GameMan;
 
     public static bool timer = false;
 

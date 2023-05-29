@@ -20,12 +20,13 @@ public class ShopManager : MonoBehaviour
     public void Buy(string name) {
         for(int i = 0; i < Upgrades.Length; ++i) {
             ShopItem script = Upgrades[i].GetComponent<ShopItem>();
+            GameManager manager = GameMan.GetComponent<GameManager>();
             if(script.name == name) {
                 // item found, try to buy. if not enough currency, return
-                print(GameManager.currency + "  " + script.cost);
-                if(GameManager.currency >= script.cost && script.numUpgrades >= 1) {
+                print(manager.currency + "  " + script.cost);
+                if(manager.currency >= script.cost && script.numUpgrades >= 1) {
                     print("bought");
-                    GameManager.currency -= script.cost;
+                    manager.currency -= script.cost;
                     script.cost += script.cost;
                 }
                 return;

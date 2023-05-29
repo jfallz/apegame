@@ -1572,6 +1572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Upgrades:
   - {fileID: 1778953243}
+  GameMan: {fileID: 736087428}
 --- !u!65 &146695614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6054,6 +6055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b029b65986b5348b59d6c20430bc47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameMan: {fileID: 736087428}
   init_distance: 0
   textMeshPro: {fileID: 0}
 --- !u!1001 &639234690
@@ -6824,10 +6826,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2329bfc0c7abb468e8df7853599707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1441707942}
-  DeathMenu: {fileID: 924435613}
-  Shop: {fileID: 145920076}
-  prefabToInstantiate: {fileID: 5723002101714760881, guid: 12f52630f1705a44c8734b0a6ecc38fd, type: 3}
+  distanceTraveled: 0
+  currency: 0
+  spawnPoint: {fileID: 0}
+  DeathMenu: {fileID: 0}
+  Shop: {fileID: 0}
+  prefabToInstantiate: {fileID: 0}
+  dead: 0
+  restart: 0
 --- !u!4 &736087430
 Transform:
   m_ObjectHideFlags: 0
@@ -6855,6 +6861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3be5fe578fb0a439c5b4c5f8cab16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameMan: {fileID: 0}
 --- !u!1 &744954893
 GameObject:
   m_ObjectHideFlags: 0
@@ -12098,6 +12105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fracturedPrefab: {fileID: 3710503867121138787, guid: 04464ead676fdf747bf24ace216caffd, type: 3}
   playerPrefab: {fileID: 3569545823096092761, guid: 61fda3ba685c8d94489ff4cf8bcff501, type: 3}
+  GameMan: {fileID: 736087428}
 --- !u!65 &1243809358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15503,7 +15511,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1988875568}
   m_HandleRect: {fileID: 1988875567}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
