@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerStart : MonoBehaviour
 {
-    public GameObject GameMan;
+    //public GameObject GameMan;
     public int init_distance;
     public TMPro.TextMeshProUGUI textMeshPro;
 
@@ -24,8 +24,8 @@ public class TriggerStart : MonoBehaviour
         if(timer) {
             GameObject other = GameObject.FindWithTag("Player");
             int d = Mathf.RoundToInt(other.gameObject.transform.position.z) - init_distance;
-            GameManager script = GameMan.GetComponent<GameManager>();
-            script.distanceTraveled = d;
+            GameManager GameMan = FindObjectOfType<GameManager>();
+            GameMan.GetComponent<GameManager>().distanceTraveled = d;
         }
            // textMeshPro = GameObject.Find("DISTANCE").GetComponent<TMPro.TextMeshProUGUI>();
             //textMeshPro.text = "Distance: " + distance;

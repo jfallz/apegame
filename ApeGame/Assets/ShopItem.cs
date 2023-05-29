@@ -5,8 +5,9 @@ using UnityEngine;
 public class ShopItem : MonoBehaviour
 {
     [SerializeField] public string name;
-    [SerializeField] public int numUpgrades;
+    [SerializeField] public float maxUpgrades;
     [SerializeField] public float cost;
+    public int numUpgrades = 0;
 
     public void addToCost(float x) {
         this.cost += x;

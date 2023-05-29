@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int distanceTraveled;
-    public float currency;
+    [SerializeField] public float currency;
     public Transform spawnPoint;
     public GameObject DeathMenu;
     public GameObject Shop;
@@ -15,10 +15,6 @@ public class GameManager : MonoBehaviour
     
 
     public void Update() {
-        if(distanceTraveled != 0) {
-            TMPro.TextMeshProUGUI textMeshPro = GameObject.Find("DISTANCE").GetComponent<TMPro.TextMeshProUGUI>();
-            textMeshPro.text = "Distance: " + distanceTraveled;
-        }
         if(restart)
             Restart();
         if(dead)
@@ -27,6 +23,8 @@ public class GameManager : MonoBehaviour
 
 
     public void Death() {
+        currency += Mathf.RoundToInt(distanceTraveled * .75f);  // add currency
+        distanceTraveled = 0;
         DeathMenu.SetActive(true);
         dead = false;
     }
@@ -49,8 +47,6 @@ public class GameManager : MonoBehaviour
             Destroy(GameObject.FindWithTag("Cart"));
             Destroy(GameObject.FindWithTag("Player"));
             Instantiate(prefabToInstantiate, spawnPoint.position, Quaternion.identity); // instantiate new player
-            currency += Mathf.RoundToInt(distanceTraveled * .75f);  // add currency
-            distanceTraveled = 0;
             restart = false;
     }
 }
