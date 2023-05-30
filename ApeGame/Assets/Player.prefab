@@ -338,7 +338,7 @@ MonoBehaviour:
   - leftWheel: {fileID: 5723002100290452659}
     rightWheel: {fileID: 5723002100355593776}
     motor: 0
-  maxMotorTorque: 5000
+  maxMotorTorque: 4000
   maxSteeringAngle: 0
   torque: {x: 0.07, y: 0, z: 0}
 --- !u!54 &5723002101714760879

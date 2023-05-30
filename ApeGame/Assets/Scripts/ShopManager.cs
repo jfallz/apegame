@@ -6,7 +6,6 @@ public class ShopManager : MonoBehaviour
 {
 
     public GameObject[] Upgrades;
-    public GameObject Player;
 
     // Update is called once per frame
     public void Refresh() {
@@ -29,7 +28,7 @@ public class ShopManager : MonoBehaviour
                     man.currency -= script.cost;
                     script.cost += script.cost;
                     script.numUpgrades++;
-                    PerformUpgrade(script.name, script.numUpgrades);
+                    //PerformUpgrade(script.name, script.numUpgrades);
                     Refresh();
                 }
                 return;
@@ -37,19 +36,32 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public void PerformUpgrade(string name, int tier) {
+    public void PerformUpgrade(string name, int tier, GameObject player) {
         switch(name) {
             case "Speed":
                 // goal of speed upgrade is to : firstly, upgrade the torque.
                 // final upgrade is rear wheel drive as this gives the biggest difference in speed
-                print("Speed upgraded");
-                SimpleCarController script = Player.GetComponent<SimpleCarController>();
-                // if(tier == 1) {
-                //     script.axleInfos[1].motor = true;
-                // }
+                SimpleCarController script = player.GetComponent<SimpleCarController>();
+                if(tier >= 1) {
+                    print("tier 1 speed");
+                    script.maxMotorTorque = 9000;
+                }
+                
+                if(tier >= 2) {
+                    print("tier 2 speed");
+                    script.axleInfos[1].motor = true;
+                }
                 break;
             default:
                 break;
+        }
+    }
+
+    public void PerformUpgrades(GameObject player) {
+        for(int i = 0; i < Upgrades.Length; ++i) {
+            ShopItem script = Upgrades[i].GetComponent<ShopItem>();
+            if(script.numUpgrades > 0)
+                PerformUpgrade(script.name, script.numUpgrades, player);
         }
     }
 }

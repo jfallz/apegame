@@ -46,7 +46,8 @@ public class GameManager : MonoBehaviour
             Destroy(GameObject.FindWithTag("GameController"));
             Destroy(GameObject.FindWithTag("Cart"));
             Destroy(GameObject.FindWithTag("Player"));
-            Instantiate(prefabToInstantiate, spawnPoint.position, Quaternion.identity); // instantiate new player
+            GameObject player = Instantiate(prefabToInstantiate, spawnPoint.position, Quaternion.identity); // instantiate new player
+            Shop.GetComponent<ShopManager>().PerformUpgrades(player);
             restart = false;
     }
 }
