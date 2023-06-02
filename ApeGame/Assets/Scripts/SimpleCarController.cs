@@ -14,6 +14,7 @@ public class SimpleCarController : MonoBehaviour {
     public List<AxleInfo> axleInfos; 
     public float maxMotorTorque;
     public float maxSteeringAngle;
+    public float forceToAdd = 50f;
     public Vector3 torque = new Vector3(.07f, 0f, 0f);
      
     // finds the corresponding visual wheel
@@ -50,11 +51,8 @@ public class SimpleCarController : MonoBehaviour {
 
     public void FixedUpdate()
     {
-        // if(Input.GetMouseButtonDown(0)) {
-        //     Rigidbody rb = GetComponent<Rigidbody>();
-        //     Vector3 force = new Vector3(0f, 0f, 20f);
-        //     rb.velocity += force;
-        // }
+        Rigidbody rb = GetComponent<Rigidbody>();
+
 
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 3f);
         if(Input.GetKey(KeyCode.D) && !isGrounded) {

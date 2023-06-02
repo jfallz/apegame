@@ -37,11 +37,13 @@ public class ShopManager : MonoBehaviour
     }
 
     public void PerformUpgrade(string name, int tier, GameObject player) {
+        SimpleCarController script = player.GetComponent<SimpleCarController>();
+        Rigidbody rb = player.GetComponent<Rigidbody>();
+        SimpleWing wing = player.GetComponent<SimpleWing>();
         switch(name) {
             case "Speed":
                 // goal of speed upgrade is to : firstly, upgrade the torque.
                 // final upgrade is rear wheel drive as this gives the biggest difference in speed
-                SimpleCarController script = player.GetComponent<SimpleCarController>();
                 if(tier >= 1) {
                     print("tier 1 speed");
                     script.maxMotorTorque = 9000;
@@ -50,6 +52,12 @@ public class ShopManager : MonoBehaviour
                 if(tier >= 2) {
                     print("tier 2 speed");
                     script.axleInfos[1].motor = true;
+                }
+                break;
+            case "Glide":
+                if(tier >= 1) {
+                    print("tier 1 glide");
+                    wing.enabled = true;
                 }
                 break;
             default:
