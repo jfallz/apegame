@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37978dbe5393b6fd0553ad50c7acd90d1bf2eb9ff60b4a6f2f457161a107f8a9
-size 369
+fileFormatVersion: 2
+guid: 2074926c9349d9d4f9dc301469957a99
+timeCreated: 1509766459
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - wheelVisualizerPrefab: {fileID: 4216227330857642, guid: b377d0fdf6ee1744f9f2dd9dbcd62592,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
