@@ -467,7 +467,10 @@ MonoBehaviour:
   - Assets/mushroom.obj
   - Assets/IgniteCoders/Simple Water Shader/Info/cart.obj
   - Assets/Cartwheelsseperated.fbx
-  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000
+  - Assets/Wheel.fbx
+  - Assets/IgniteCoders/Simple Water Shader/Info/cart 1.obj
+  - Assets/Wheel 1.fbx
+  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000000000000000000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 4070 Ti
