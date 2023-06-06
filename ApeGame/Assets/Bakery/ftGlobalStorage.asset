@@ -470,7 +470,16 @@ MonoBehaviour:
   - Assets/Wheel.fbx
   - Assets/IgniteCoders/Simple Water Shader/Info/cart 1.obj
   - Assets/Wheel 1.fbx
-  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000000000000000000000000000
+  - Assets/CartPieces.fbx
+  - Assets/fractured.obj
+  - Assets/UnknownWell.obj
+  - Assets/Prefabs/Depreciated/CartCracked.dae
+  - Assets/Prefabs/Depreciated/ape_Idle_anim.fbx
+  - Assets/Groundplane-1.obj
+  - Assets/Prefabs/Depreciated/ape_Idle.fbx
+  - Assets/Prefabs/Depreciated/ground2-0.fbx
+  - Assets/Prefabs/Textures/ground2-1.fbx
+  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000000000000000000000000000010100000101000001010000010100000000000000000000010100000101000001010000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 4070 Ti
