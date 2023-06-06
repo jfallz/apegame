@@ -465,7 +465,9 @@ MonoBehaviour:
   - Assets/Bakery/examples/content/floor_lamp.FBX
   - Assets/Mushroom.fbx
   - Assets/mushroom.obj
-  uvOverlapAssetList: 00000000ffffffffffffffff00000000
+  - Assets/IgniteCoders/Simple Water Shader/Info/cart.obj
+  - Assets/Cartwheelsseperated.fbx
+  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 4070 Ti
