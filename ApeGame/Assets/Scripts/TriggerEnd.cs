@@ -17,10 +17,11 @@ public class TriggerEnd : MonoBehaviour
     public void OnTriggerEnter(Collider a)
     {
         string collidedObjectTag = a.gameObject.tag;
-        if(!a.CompareTag("Cart"))
+        if(!a.CompareTag("Cart") || moving)
             return;
 
         GameObject cartObject = GameObject.FindWithTag("Cart");
+        GameObject gameController = GameObject.FindWithTag("GameController");
         GameObject player = GameObject.FindWithTag("Player");
         Vector3 cartPos = cartObject.transform.position;
         Vector3 playerPos = player.transform.position;
@@ -29,12 +30,13 @@ public class TriggerEnd : MonoBehaviour
 
         if(cartObject != null) {
             Vector3 vel = otherRb.velocity;
-            Destroy(cartObject);
             Destroy(player);
+            Destroy(gameController);
 
             GameObject newPlayer;
             Vector3 newCartPos = new Vector3(cartPos.x, cartPos.y - 2.26f, cartPos.z);
             GameObject tempCart = Instantiate(fracturedPrefab, newCartPos, Quaternion.identity);
+            //tempCart = Instantiate(fracturedPrefab, newCartPos, Quaternion.identity);
 
 
             newPlayer = Instantiate(playerPrefab, playerPos, Quaternion.identity);

@@ -6,8 +6,8 @@ public class Bounce : MonoBehaviour
 {
     //[SerializeField] public Vector3 jumpBoost = new Vector3(0f, .05f, 0f);
     //[SerializeField] public Vector3 forwardBoost = new Vector3(0f, 0f, .05f);
-    [SerializeField] public float upBoost = 55f;
-    [SerializeField] public float forwardBoost = 55f;
+    [SerializeField] public float upBoost = 25f;
+    [SerializeField] public float forwardBoost = 25f;
     private bool boosted = false;
     private float desiredTime = .1f;
     private float timer = 0f;
@@ -32,6 +32,8 @@ public class Bounce : MonoBehaviour
 
         rb.AddForce(Vector3.up * upBoost, ForceMode.VelocityChange);         // applying jump boost
         rb.AddForce(Vector3.forward * forwardBoost, ForceMode.VelocityChange);         // applying forward boost
+        Animator animator = GetComponent<Animator>();
+        animator.Play("boing");
 
     }
 
