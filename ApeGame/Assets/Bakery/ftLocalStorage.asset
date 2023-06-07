@@ -22,4 +22,12 @@ MonoBehaviour:
   - Assets/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_04.fbx
   - Assets/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_03.fbx
   - Assets/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_01.fbx
-  modifiedAssetPaddingHash: d6a958ff797e93638941d8468a2a6015041bde24aeedae515616a4bb5716a4bb351da8a2
+  - Assets/Prefabs/Depreciated/RockTest.fbx
+  - Assets/Prefabs/Depreciated/RampTestmaybefix.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Tropical_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Forest_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_01.fbx
+  modifiedAssetPaddingHash: d6a958ff797e93638941d8468a2a6015041bde24aeedae515616a4bb5716a4bb351da8a2d7c2a693363fd3d9a64854504bdf7af458006b7f69b4b3f51a23555a99dfaec5

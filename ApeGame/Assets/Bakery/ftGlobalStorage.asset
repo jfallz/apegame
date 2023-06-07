@@ -22,7 +22,15 @@ MonoBehaviour:
   - Assets/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_04.fbx
   - Assets/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_03.fbx
   - Assets/PolygonNatureBiomes/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_01.fbx
-  modifiedAssetPaddingHash: d6a958ff797e93638941d8468a2a6015041bde24aeedae515616a4bb5716a4bb351da8a2
+  - Assets/Prefabs/Depreciated/RockTest.fbx
+  - Assets/Prefabs/Depreciated/RampTestmaybefix.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Tropical_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Forest_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Palm_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_01.fbx
+  modifiedAssetPaddingHash: d6a958ff797e93638941d8468a2a6015041bde24aeedae515616a4bb5716a4bb351da8a2d7c2a693363fd3d9a64854504bdf7af458006b7f69b4b3f51a23555a99dfaec5
   modifiedMeshList: []
   modifiedMeshPaddingList: 
   modifiedAssets:
@@ -460,6 +468,56 @@ MonoBehaviour:
     - SM_Env_Tree_Palm_01_LOD3
     padding: 1100000011000000120000000b000000
     unwrapper: 00000000000000000000000000000000
+  - meshName:
+    - Cube.004
+    padding: 13000000
+    unwrapper: 00000000
+  - meshName:
+    - Cube
+    padding: 01000000
+    unwrapper: 00000000
+  - meshName:
+    - SM_Env_Bush_Tropical_04_Leaves_LOD0
+    - SM_Env_Bush_Tropical_04_Branches_LOD0
+    - SM_Env_Bush_Tropical_04_Leaves_LOD1
+    padding: 0d0000003300000010000000
+    unwrapper: 000000000000000000000000
+  - meshName:
+    - SM_Env_Tree_Forest_01_Branches_LOD0
+    - SM_Env_Tree_Forest_01_LOD0
+    - SM_Env_Tree_Forest_01_Branches_LOD1
+    - SM_Env_Tree_Forest_01_LOD1
+    - SM_Env_Tree_Forest_01_LOD2
+    - SM_Env_Tree_Forest_01_LOD3
+    padding: 19000000050000001a00000004000000050000000b000000
+    unwrapper: 000000000000000000000000000000000000000000000000
+  - meshName:
+    - SM_Env_Tree_Palm_01_LOD0
+    - SM_Env_Tree_Palm_01_LOD1
+    - SM_Env_Tree_Palm_01_LOD2
+    - SM_Env_Tree_Palm_01_LOD3
+    padding: 190000001a0000001b00000011000000
+    unwrapper: 00000000000000000000000000000000
+  - meshName:
+    - SM_Env_Tree_Palm_04_LOD0
+    - SM_Env_Tree_Palm_04_LOD1
+    - SM_Env_Tree_Palm_04_LOD2
+    - SM_Env_Tree_Palm_04_LOD3
+    padding: 18000000180000001900000011000000
+    unwrapper: 00000000000000000000000000000000
+  - meshName:
+    - SM_Env_Tree_Palm_03_LOD0
+    - SM_Env_Tree_Palm_03_LOD1
+    - SM_Env_Tree_Palm_03_LOD2
+    - SM_Env_Tree_Palm_03_LOD3
+    padding: 18000000190000001a00000010000000
+    unwrapper: 00000000000000000000000000000000
+  - meshName:
+    - SM_Env_Fern_01_LOD0
+    - SM_Env_Fern_01_LOD1
+    - SM_Env_Fern_01_LOD2
+    padding: 3e0000004000000042000000
+    unwrapper: 000000000000000000000000
   assetList:
   - Assets/Bakery/examples/content/sponza/bush.FBX
   - Assets/Bakery/examples/content/floor_lamp.FBX
@@ -569,7 +627,7 @@ MonoBehaviour:
   renderSettingsRTPVWidth: 640
   renderSettingsRTPVHeight: 360
   tagOverrides: []
-  modifiedMeshPaddingArray: 1000000010000000110000000b000000
-  modifiedMeshUnwrapperArray: 00000000000000000000000000000000
+  modifiedMeshPaddingArray: 3e0000004000000042000000
+  modifiedMeshUnwrapperArray: 000000000000000000000000
   texSettingsKey: []
   texSettingsVal: []
