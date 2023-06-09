@@ -30,6 +30,7 @@ public class TriggerEnd : MonoBehaviour
 
         if(cartObject != null) {
             Vector3 vel = otherRb.velocity;
+            vel += new Vector3(0f, 10f, 2f);
             Destroy(player);
             Destroy(gameController);
 
@@ -41,7 +42,11 @@ public class TriggerEnd : MonoBehaviour
 
             newPlayer = Instantiate(playerPrefab, playerPos, Quaternion.identity);
             Rigidbody rb = newPlayer.GetComponent<Rigidbody>();
+            vel.y = Mathf.Abs(vel.y) / 2f;
+            vel.z = Mathf.Abs(vel.z);
             rb.velocity = vel * 1.25f;
+            rb.AddTorque(Vector3.forward * rb.velocity.z);
+
 
             for(int i = 0; i < tempCart.transform.childCount; ++i) {
                 GameObject child = tempCart.transform.GetChild(i).gameObject;
