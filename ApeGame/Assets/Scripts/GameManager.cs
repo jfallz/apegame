@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int distanceTraveled;
+    public int maxDistance = 0;
     [SerializeField] public float currency;
     public Transform spawnPoint;
     public GameObject DeathMenu;
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     public void Death() {
         currency += Mathf.RoundToInt(distanceTraveled * .75f);  // add currency
+        if(Mathf.RoundToInt(distanceTraveled) > maxDistance)
+            maxDistance = Mathf.RoundToInt(distanceTraveled);
         distanceTraveled = 0;
         DeathMenu.SetActive(true);
         dead = false;

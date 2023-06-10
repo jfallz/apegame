@@ -28,4 +28,5 @@ public class dg_simpleCamFollow : MonoBehaviour
                 target = GameObject.FindWithTag("Player").GetComponent<Transform>();
             }
     }
+
 }

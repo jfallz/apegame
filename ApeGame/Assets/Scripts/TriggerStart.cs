@@ -7,7 +7,6 @@ public class TriggerStart : MonoBehaviour
     //public GameObject GameMan;
     public int init_distance;
     public TMPro.TextMeshProUGUI textMeshPro;
-
     public static bool timer = false;
 
     public void OnTriggerEnter(Collider a)
@@ -20,7 +19,7 @@ public class TriggerStart : MonoBehaviour
         timer = true;
     }
 
-    public void Update() {
+    public void FixedUpdate() {
         if(timer) {
             GameObject other = GameObject.FindWithTag("Player");
             int d = Mathf.RoundToInt(other.gameObject.transform.position.z) - init_distance;

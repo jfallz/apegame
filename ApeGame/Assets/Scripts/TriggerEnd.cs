@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class TriggerEnd : MonoBehaviour
 {
     public GameObject fracturedPrefab;
     public GameObject playerPrefab;
     public GameObject GameMan;
+    public GameObject camera;
+    private PostProcessVolume postProcessVolume;
+    private ChromaticAberration chromaticAberration;
+    private float currentIntensity = 0f;
+    private Coroutine intensityCoroutine;
 
     private float desiredTime = 1f;
     private float timer = 0f;
@@ -32,6 +38,7 @@ public class TriggerEnd : MonoBehaviour
             Vector3 vel = otherRb.velocity;
             vel += new Vector3(0f, 10f, 2f);
             Destroy(player);
+            Destroy(cartObject);
             Destroy(gameController);
 
             GameObject newPlayer;
@@ -51,15 +58,34 @@ public class TriggerEnd : MonoBehaviour
             for(int i = 0; i < tempCart.transform.childCount; ++i) {
                 GameObject child = tempCart.transform.GetChild(i).gameObject;
                 Rigidbody childRb = child.GetComponent<Rigidbody>();
-                childRb.velocity = vel;
+                childRb.velocity = vel * Random.Range(-10.5f, 10.5f);
             }
+            Crash();
             p = rb;
             moving = true;
         }
     }
 
+    public void Crash() {
+        // induce stress on camera for shaking effect
+        StressReceiver trauma = camera.GetComponent<StressReceiver>();
+        trauma.InduceStress(5f);
 
-    public void Update() {
+        postProcessVolume = camera.GetComponent<PostProcessVolume>();
+        postProcessVolume.profile.TryGetSettings(out chromaticAberration);
+        if (chromaticAberration != null)
+        {
+            if(intensityCoroutine != null) {
+                StopCoroutine(intensityCoroutine);
+            }
+            chromaticAberration.intensity.value = 1f;
+            currentIntensity = 1f;
+            intensityCoroutine = StartCoroutine(ChangeIntensityOverTime(0f, .75f));
+        }
+
+    }
+
+    public void FixedUpdate() {
         if(moving) {
             if(p.velocity.magnitude < 1) {
                 timer += Time.deltaTime;
@@ -74,5 +100,32 @@ public class TriggerEnd : MonoBehaviour
                 timer = 0f;
             }
         }
+
+    }
+
+    private IEnumerator ChangeIntensityOverTime(float targetIntensity, float duration) {
+        float elapsedTime = 0f;
+        float startIntensity = currentIntensity;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            // Calculate the interpolated intensity based on time
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            currentIntensity = Mathf.Lerp(startIntensity, targetIntensity, t);
+
+            // Set the chromatic aberration intensity
+            chromaticAberration.intensity.value = currentIntensity;
+
+            yield return null;
+        }
+
+        // Ensure the final intensity is set correctly
+        currentIntensity = targetIntensity;
+        chromaticAberration.intensity.value = currentIntensity;
+
+        // Reset the coroutine reference
+        intensityCoroutine = null;
     }
 }
