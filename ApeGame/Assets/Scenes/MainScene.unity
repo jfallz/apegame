@@ -13556,7 +13556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644267400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 351.49, y: 3.64, z: -34.577168}
+  m_LocalPosition: {x: 351.49, y: 18.28, z: -62.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49639,6 +49639,7 @@ GameObject:
   - component: {fileID: 1932885150}
   - component: {fileID: 1932885149}
   - component: {fileID: 1932885148}
+  - component: {fileID: 1932885151}
   m_Layer: 0
   m_Name: Track.001 (1)
   m_TagString: Untagged
@@ -49712,6 +49713,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 3.944, y: 0, z: 0}
+--- !u!65 &1932885151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932885147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.16, y: 0.22696829, z: 34.60396}
+  m_Center: {x: -0.0017051697, y: 0.02, z: 0.74187374}
 --- !u!114 &1932913550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50328,6 +50342,7 @@ GameObject:
   - component: {fileID: 1964134370}
   - component: {fileID: 1964134369}
   - component: {fileID: 1964134368}
+  - component: {fileID: 1964134371}
   m_Layer: 0
   m_Name: Track.001
   m_TagString: Untagged
@@ -50401,6 +50416,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 3.944, y: 0, z: 0}
+--- !u!65 &1964134371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964134367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.16, y: 0.22696829, z: 34.60396}
+  m_Center: {x: -0.0017051697, y: 0.02, z: 0.74187374}
 --- !u!1001 &1967819625
 PrefabInstance:
   m_ObjectHideFlags: 0
