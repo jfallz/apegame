@@ -538,7 +538,10 @@ MonoBehaviour:
   - Assets/Prefabs/Depreciated/ground2-0.fbx
   - Assets/Prefabs/Textures/ground2-1.fbx
   - Assets/Prefabs/Depreciated/RampTest_1.fbx
-  uvOverlapAssetList: 00000000ffffffffffffffff00000000000000000000000000000000000000000000000001010000010100000101000001010000000000000000000001010000010100000101000001010000
+  - Assets/Prefabs/eb52281cc1594f0285c164eb677c8f38.obj
+  - Assets/Prefabs/Banana.obj
+  - Assets/Ultimate 10 Plus Shaders/3D Models/Grass_Mesh.fbx
+  uvOverlapAssetList: 00000000ffffffffffffffff00000000000000000000000000000000000000000000000001010000010100000101000001010000000000000000000001010000010100000101000001010000000000000000000001010000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 4070 Ti
