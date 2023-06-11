@@ -52,7 +52,7 @@ public class TriggerEnd : MonoBehaviour
             vel.y = Mathf.Abs(vel.y) / 2f;
             vel.z = Mathf.Abs(vel.z);
             rb.velocity = vel * 1.25f;
-            rb.AddTorque(Vector3.forward * rb.velocity.z);
+            //rb.AddTorque(Vector3.forward * rb.velocity.z);
 
 
             for(int i = 0; i < tempCart.transform.childCount; ++i) {
