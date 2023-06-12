@@ -669,9 +669,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2303252667992696181}
-  m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.04244611, y: 1.7724682, z: 0.07948935}
-  m_LocalScale: {x: 0.0002097157, y: 0.0002097157, z: 0.0002097157}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0.042446017, y: 1.7724677, z: 0.07948972}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2673704540859452092}
@@ -842,7 +842,7 @@ MonoBehaviour:
       Generator_Offset: {x: 0, y: 0, z: 0}
       Generator_OverrideCapsuleDir: -1
       Generator_Extra: 0
-    _EditorCategory: 0
+    _EditorCategory: 1
     _EditorDrawBones: 1
     _EditorDrawHumanoidExtra: 0
     _EditorDrawGenerator: 1
@@ -932,7 +932,7 @@ GameObject:
   - component: {fileID: 2673704540859452092}
   m_Layer: 0
   m_Name: Ragdoll
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
