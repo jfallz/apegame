@@ -546,7 +546,20 @@ MonoBehaviour:
   - Assets/Prefabs/Monkey characterRIGFIX.fbx
   - Assets/Prefabs/Monkey characterRIGFIX2.fbx
   - Assets/Prefabs/RealApeTestCharblend.fbx
-  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000000000000000000000000000010100000101000001010000010100000000000000000000010100000101000001010000010100000000000000000000010100000000000000000000000000000000000000000000
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fpider/Fpider.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fiped/Fiped.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fhreeped/Fhreeped.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fannequin/FAnnequinV2_Join.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fannequin/FArmed.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/FredCrab/Fred
+    Crab.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Feetle/Feetle.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Folf/Folf.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fockatrice/Fockatrice.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fannequin/FAnnequinV2.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fultieye/Fultieye.fbx
+  - Assets/FImpossible Creations/Plugins - Shared/FBasic Assets/Models/Fuman/Fuman.fbx
+  uvOverlapAssetList: 00000000ffffffffffffffff000000000000000000000000000000000000000000000000010100000101000001010000010100000000000000000000010100000101000001010000010100000000000000000000010100000000000000000000000000000000000000000000010100000000000001010000000000000000000000000000000000000000000000000000000000000101000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 4070 Ti
