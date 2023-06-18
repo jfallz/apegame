@@ -41,18 +41,15 @@ public class TriggerEnd : MonoBehaviour
             Destroy(cartObject);
             Destroy(gameController);
 
-            GameObject newPlayer;
             Vector3 newCartPos = new Vector3(cartPos.x, cartPos.y - 2.26f, cartPos.z);
             GameObject tempCart = Instantiate(fracturedPrefab, newCartPos, Quaternion.identity);
             //tempCart = Instantiate(fracturedPrefab, newCartPos, Quaternion.identity);
 
-
-            newPlayer = Instantiate(playerPrefab, playerPos, Quaternion.identity);
-            Rigidbody rb = newPlayer.GetComponent<Rigidbody>();
+            GameObject newPlayer = Instantiate(playerPrefab, playerPos, Quaternion.identity);
+            Rigidbody rb = GameObject.FindWithTag("EditorOnly").GetComponent<Rigidbody>();
             vel.y = Mathf.Abs(vel.y) / 2f;
             vel.z = Mathf.Abs(vel.z);
-            rb.velocity = vel * 1.25f;
-            //rb.AddTorque(Vector3.forward * rb.velocity.z);
+            rb.velocity = vel * 4f;
 
 
             for(int i = 0; i < tempCart.transform.childCount; ++i) {
