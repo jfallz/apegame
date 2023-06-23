@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cart
   - CartCracked
+  - CameraSubject
   layers:
   - Default
   - TransparentFX

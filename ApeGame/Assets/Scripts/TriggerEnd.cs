@@ -49,7 +49,7 @@ public class TriggerEnd : MonoBehaviour
             Rigidbody rb = GameObject.FindWithTag("EditorOnly").GetComponent<Rigidbody>();
             vel.y = Mathf.Abs(vel.y) / 2f;
             vel.z = Mathf.Abs(vel.z);
-            rb.velocity = vel * 4f;
+            rb.velocity = vel * 6f;
 
 
             for(int i = 0; i < tempCart.transform.childCount; ++i) {

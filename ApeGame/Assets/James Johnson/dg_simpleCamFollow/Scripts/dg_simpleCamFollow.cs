@@ -13,7 +13,7 @@ public class dg_simpleCamFollow : MonoBehaviour
     bool warningAlreadyShown = false;
 
     private void Start() {
-        target = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        target = GameObject.FindWithTag("CameraSubject").GetComponent<Transform>();
         if (takeOffsetFromInitialPos && target != null) generalOffset = transform.position - target.position;
     }
 
@@ -25,7 +25,7 @@ public class dg_simpleCamFollow : MonoBehaviour
 
             if (lookAtTarget) transform.LookAt(target);
         } else {
-                target = GameObject.FindWithTag("Player").GetComponent<Transform>();
+                target = GameObject.FindWithTag("CameraSubject").GetComponent<Transform>();
             }
     }
 

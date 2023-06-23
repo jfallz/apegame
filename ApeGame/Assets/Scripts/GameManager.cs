@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
             Destroy(GameObject.FindWithTag("CartCracked"));
             Destroy(GameObject.FindWithTag("GameController"));
             Destroy(GameObject.FindWithTag("Cart"));
-            Destroy(GameObject.FindWithTag("Player"));
+            Destroy(GameObject.Find("Ragdoll"));
             GameObject player = Instantiate(prefabToInstantiate, spawnPoint.position, Quaternion.identity); // instantiate new player
             Shop.GetComponent<ShopManager>().PerformUpgrades(player);
             restart = false;

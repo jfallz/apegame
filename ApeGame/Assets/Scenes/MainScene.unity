@@ -7280,6 +7280,10 @@ PrefabInstance:
       propertyPath: lookAtTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5639202794262202564, guid: 7bc5ba508c9a34942a8f924c256db154, type: 3}
+      propertyPath: takeOffsetFromInitialPos
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5639202794262202567, guid: 7bc5ba508c9a34942a8f924c256db154, type: 3}
       propertyPath: m_Name
       value: Camera with SimpleCamFollw

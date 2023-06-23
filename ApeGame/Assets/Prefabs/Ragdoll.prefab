@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 2490580067968635630}
   m_Layer: 0
   m_Name: DEF-spine.001
-  m_TagString: Untagged
+  m_TagString: CameraSubject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,12 +75,12 @@ Rigidbody:
   m_GameObject: {fileID: 117134895518140371}
   serializedVersion: 2
   m_Mass: 6.5
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580067968635630
 CapsuleCollider:
@@ -142,12 +142,12 @@ Rigidbody:
   m_GameObject: {fileID: 1070224069399094121}
   serializedVersion: 2
   m_Mass: 3.25
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580067383053498
 CapsuleCollider:
@@ -303,12 +303,12 @@ Rigidbody:
   m_GameObject: {fileID: 1150735990017785837}
   serializedVersion: 2
   m_Mass: 1.9499999
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580068637279514
 CapsuleCollider:
@@ -527,12 +527,12 @@ Rigidbody:
   m_GameObject: {fileID: 2297902529060201970}
   serializedVersion: 2
   m_Mass: 2.6
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580068552435930
 CapsuleCollider:
@@ -797,7 +797,7 @@ GameObject:
   - component: {fileID: 8949739545943445618}
   m_Layer: 0
   m_Name: Ragdoll
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1093,12 +1093,12 @@ Rigidbody:
   m_GameObject: {fileID: 5121299795741633706}
   serializedVersion: 2
   m_Mass: 1.9499999
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580068324395350
 CapsuleCollider:
@@ -1256,12 +1256,12 @@ Rigidbody:
   m_GameObject: {fileID: 5274853825644896564}
   serializedVersion: 2
   m_Mass: 5.8500004
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580067274488475
 CapsuleCollider:
@@ -1480,12 +1480,12 @@ Rigidbody:
   m_GameObject: {fileID: 6018826732270369507}
   serializedVersion: 2
   m_Mass: 1.9499999
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580068377726372
 CapsuleCollider:
@@ -1611,7 +1611,7 @@ GameObject:
   - component: {fileID: 2490580068743079271}
   m_Layer: 0
   m_Name: DEF-thigh.L
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1641,12 +1641,12 @@ Rigidbody:
   m_GameObject: {fileID: 6711807204099837240}
   serializedVersion: 2
   m_Mass: 3.25
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580068743079256
 CapsuleCollider:
@@ -1834,12 +1834,12 @@ Rigidbody:
   m_GameObject: {fileID: 6929246377290565601}
   serializedVersion: 2
   m_Mass: 1.3
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580067307679089
 CapsuleCollider:
@@ -2026,12 +2026,12 @@ Rigidbody:
   m_GameObject: {fileID: 7353779110435595652}
   serializedVersion: 2
   m_Mass: 1.3
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580067702821829
 CapsuleCollider:
@@ -2219,12 +2219,12 @@ Rigidbody:
   m_GameObject: {fileID: 8177605997114013329}
   serializedVersion: 2
   m_Mass: 3.25
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580067209004437
 CapsuleCollider:
@@ -2411,12 +2411,12 @@ Rigidbody:
   m_GameObject: {fileID: 8896944899543352495}
   serializedVersion: 2
   m_Mass: 1.9499999
-  m_Drag: 1.25
-  m_AngularDrag: 0.5
+  m_Drag: 0.01
+  m_AngularDrag: 0.1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 2
   m_CollisionDetection: 0
 --- !u!136 &2490580068035623535
 CapsuleCollider:
