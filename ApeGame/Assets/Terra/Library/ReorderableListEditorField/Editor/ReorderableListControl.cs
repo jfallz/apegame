@@ -583,7 +583,7 @@ namespace Terra.ReorderableList {
 		/// <param name="adaptor">Reorderable list adaptor.</param>
 		private void PrepareState(int controlID, IReorderableListAdaptor adaptor) {
 			_controlID = controlID;
-			_visibleRect = GUIHelper.VisibleRect();
+			//_visibleRect = GUIHelper.VisibleRect();
 
 			if ((Flags & ReorderableListFlags.ShowIndices) != 0)
 				_indexLabelWidth = CountDigits(adaptor.Count) * 8 + 8;

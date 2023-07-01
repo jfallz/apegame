@@ -67,7 +67,7 @@ Material:
     - _NormalScale: 0.264
     - _NormalTiling: 0.38
     - _NormalTiling2: 0.1
-    - _Opacity: 0.9
+    - _Opacity: 0.947
     - _OpacityFalloff: 9.39
     - _OpacityMin: 0.32
     - _OverallFalloff: 0.45
@@ -78,7 +78,7 @@ Material:
     - _Specular: 0.026
     - _WaveAmplitude: 0.444
     - _WaveDirection: 0
-    - _WaveFoamOpacity: 0.069
+    - _WaveFoamOpacity: 0.008
     - _WaveNoiseAmount: 2
     - _WaveNoiseScale: 30
     - _WaveSpeed: 0.244
