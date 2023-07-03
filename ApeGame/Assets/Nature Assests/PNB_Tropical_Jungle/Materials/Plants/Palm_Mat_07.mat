@@ -222,7 +222,7 @@ Material:
     - _LeafNoiseAmount: 0.2
     - _LeafNoiseScale: 1
     - _LeafNormalAmount: 0.5
-    - _LeafSmoothness: 0.49
+    - _LeafSmoothness: 0
     - _Metallic: 0.132
     - _Mode: 0
     - _NormalAmount: 0.75

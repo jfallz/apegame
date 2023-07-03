@@ -266,9 +266,9 @@ Material:
     - _FrostingColour: {r: 0.45345885, g: 0.6039216, b: 0.07730198, a: 0}
     - _GustHighlight: {r: 0.1132075, g: 0.1132075, b: 0.1132075, a: 0}
     - _GustSmoothing: {r: 0.5, g: 0.5, b: 0.5, a: 0}
-    - _LeafBaseColour: {r: 0.38685048, g: 1, b: 0, a: 0}
-    - _LeafNoiseColour: {r: 0.65802515, g: 0.8392157, b: 0, a: 0}
-    - _LeafNoiseLargeColour: {r: 0.4282872, g: 0.4901961, b: 0.007843124, a: 0}
+    - _LeafBaseColour: {r: 0.27645347, g: 1, b: 0.0047169924, a: 0}
+    - _LeafNoiseColour: {r: 0.54145795, g: 0.6320754, b: 0.19975968, a: 1}
+    - _LeafNoiseLargeColour: {r: 0, g: 0, b: 0, a: 0}
     - _LeafTint: {r: 0.07843138, g: 0.02015968, b: 0, a: 0}
     - _SnowColour: {r: 0.7718434, g: 1, b: 0.1839623, a: 0}
     - _Tint: {r: 0, g: 0, b: 0, a: 0}

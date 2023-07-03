@@ -564,7 +564,270 @@ MonoBehaviour:
   - Assets/PinwheelStudio/Vista/Editor/Resources/Vista/Meshes/AxisGizmos.fbx
   - Assets/PinwheelStudio/Vista/Editor/Resources/Vista/Meshes/Patch.fbx
   - Assets/PinwheelStudio/Vista/Editor/Resources/Vista/Meshes/Plane.fbx
-  uvOverlapAssetList: 00000000ffffffffffffffff0000000000000000000000000000000000000000000000000101000001010000010100000101000000000000000000000101000001010000010100000101000000000000000000000101000000000000000000000000000000000000000000000101000000000000010100000000000000000000000000000000000000000000000000000000000001010000000000000000000001010000000000000000000000000000
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Rum_Bottle_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Monolith_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Raft_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_Part_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Banana_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_Flat_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flower_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flower_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Veh_Outrigger_Canoe_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Tropical_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flower_Pitcher_01.fbx
+  - Assets/UI/ui.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Vines_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Banana_03_Collision.fbx
+  - Assets/Nature Assests/PNB_Core/Models/SM_Env_Skydome_01.fbx
+  - Assets/RoomGen/Demo/Models/Wall_Window_Shutters.fbx
+  - Assets/Bakery/examples/content/logolight.FBX
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Plank_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Barrel_Broken_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/FX/FX_Models/FX_Sphere_Tropical_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/FX/FX_Models/FX_Leaf_Tropical_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_Ruins_Column_03_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_Ruins_Archway_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_06.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Vertebra_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Dock_Stairs_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Bush_Palm_04_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Vines_03.fbx
+  - Assets/RoomGen/Demo/Models/pillarWood.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Shack_Pirate_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Creeper_Vine_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_DriftWood_05.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/FX/FX_Models/FX_SunShafts_Tropical_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Palm_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Tiki_Torch_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Plank_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_DriftWood_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_Ruins_Archway_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_Flat_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Shoulder_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Bush_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Starfish_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Plank_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_Flat_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Cliff_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Barrel_01.fbx
+  - Assets/Nature Assests/PNB_Core/Models/Env_CloudRing_Larger_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_PirateFlag_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Dock_Stairs_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Archway_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/FX/FX_Models/FX_Plane.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_DriftWood_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Column_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_Part_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_PirateFlag_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Med_Plane_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Ribcage_02.fbx
+  - Assets/RoomGen/Demo/Models/tree.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Tail_01_Collision.fbx
+  - Assets/Prefabs/Depreciated/mushroom.obj
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Seaweed_Beach_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_05.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Shoulder_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Palm_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Med_Clump_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Giant_Column_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_ShipWreck_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_08.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Palm_03_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_ShipWreck_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Monolith_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Palm_04_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Skull_01_Jaw_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Tall_Plane_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Forest_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Tiki_Torch_03.fbx
+  - Assets/Simple Toon/Demo/Models/Chamber.fbx
+  - Assets/Simple Toon/Demo/Models/Bear.fbx
+  - Assets/TrueClouds/ExampleScenes/Models/fog.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Short_Clump_02.fbx
+  - Assets/Nature Assests/PNB_Core/Models/SM_Env_Cloud_Ring_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Palm_03.fbx
+  - Assets/TrueClouds/ExampleScenes/Models/cloud_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Med_Clump_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_04.fbx
+  - Assets/RoomGen/Demo/Models/stallStool.fbx
+  - Assets/Simple Toon/Demo/Models/Cone.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Tiki_Torch_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flower_Pitcher_02.fbx
+  - Assets/Prefabs/Depreciated/Tracks.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Dock_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Dock_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Short_Plane_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Banana_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_Shack_Pirate_01_Collision.fbx
+  - Assets/TrueClouds/ExampleScenes/Models/cloud_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Rib_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_11.fbx
+  - Assets/RoomGen/Demo/Models/rockLarge.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_03.fbx
+  - Assets/Nature Assests/PNB_Core/Models/SM_Env_Water_Plane_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Bush_Palm_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Spike_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Ramp_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Pile_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Flat_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Pohutukawa_03_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Cave_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tubes_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Tiki_Torch_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_GiantClam_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_01_Fin_01_Collision.fbx
+  - Assets/RoomGen/Demo/Models/rockWide.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_09.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Ribcage_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Pohutukawa_04_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Plank_03.fbx
+  - Assets/Prefabs/Depreciated/fractured.obj
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Pohutukawa_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Pohutukawa_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Veh_Outrigger_Canoe_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_Part_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/FX/FX_Models/FX_Bird_Mesh_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Rib_02_Collision.fbx
+  - Assets/Prefabs/Depreciated/Train Track.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_05.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Dock_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Tall_Clump_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Barrel_Broken_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Ground_Cover_03.fbx
+  - Assets/RoomGen/Demo/Models/Wall_Wood_Stone_Horizontal.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Growth_Plane_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/FX/FX_Models/Turtle_Rig_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Ground_Cover_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_05.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Spike_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Round_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Tall_Clump_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Tiki_Torch_03_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Pile_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Spikes_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Starfish_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Vines_04.fbx
+  - Assets/Prefabs/Depreciated/Groundplane-1.obj
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coconut_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Seaweed_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Palm_04.fbx
+  - Assets/RoomGen/Demo/Models/Wall_Wood.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Message_Bottle_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Barrel_Broken_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Column_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Ribcage_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Tiki_Torch_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Monolith_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Pohutukawa_04.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_RopeBridge_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_01_Fin_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Core/Models/SM_Env_Fog_Ring_01.fbx
+  - Assets/Prefabs/Depreciated/Wheel.fbx
+  - Assets/Prefabs/Depreciated/Cartwheelsseperated.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Tropical_01.fbx
+  - Assets/RoomGen/Demo/Models/bannerRed.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Tail_01.fbx
+  - Assets/Prefabs/Depreciated/Groundplane-0.obj
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Wall_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Vines_05.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Flat_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Vines_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Palm_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Monolith_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_RopeBridge_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Rib_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Ground_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_Giant_Column_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Banana_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Waterfall_Mesh_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Banana_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Seaweed_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_04.fbx
+  - Assets/RoomGen/Demo/Models/overhang.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Banana_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Palm_01_Flowers_01.fbx
+  - Assets/Prefabs/Depreciated/Cart.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Starfish_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Bld_Ruins_Wall_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_ShipWreck_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_Skull_01_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_06.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Column_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Med_Clump_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Archway_01.fbx
+  - Assets/Prefabs/Depreciated/ape.fbx
+  - Assets/TrueClouds/ExampleScenes/Models/Dragon.obj
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Ramp_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Raft_Oar_01.fbx
+  - Assets/RoomGen/Demo/Models/treeCrooked.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Bld_Ruins_Wall_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Short_Clump_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Rib_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Cliff_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Spikes_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Seaweed_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Tall_Clump_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Ground_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Small_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Tree_Banana_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Creeper_Vine_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Forest_03_Collision.fbx
+  - Assets/RoomGen/Demo/Models/Wall_Wood_Stone_Door_Square.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Raft_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Arch_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Volcano_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Ramp_01.fbx
+  - Assets/RoomGen/Demo/Models/road.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Bush_Palm_03_Collision.fbx
+  - Assets/Prefabs/Depreciated/CartPieces.fbx
+  - Assets/RoomGen/Demo/Models/stall.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_DriftWood_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_10.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Fern_Part_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_07.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Pile_06.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_Whale_Skeleton_01_Collision.fbx
+  - Assets/Prefabs/Depreciated/mushroom-1.obj
+  - Assets/UI/Banana/banana.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Bush_Palm_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coconut_Half_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Env_Tree_Forest_01_Collision.fbx
+  - Assets/TrueClouds/ExampleScenes/Models/fog_soft.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flowers_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Ground_Cover_01.fbx
+  - Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Vertebra_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_Cliff_03.fbx
+  - Assets/Nature Assests/PNB_Core/Models/SM_Env_Cloud_Ring_02.fbx
+  - Assets/RoomGen/Demo/Models/Wall_Wood_X.fbx
+  - Assets/TrueClouds/ExampleScenes/Models/cloud_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Bush_Palm_02.fbx
+  - Assets/RoomGen/Demo/Models/treeHighCrooked.fbx
+  - Assets/Prefabs/Depreciated/Ramp.fbx
+  - Assets/RoomGen/Demo/Models/Wall_Wood_Stone_Door_Round.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Whale_Skeleton_Skull_01.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_DriftWood_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Grass_Short_Clump_03.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/Collision/SM_Prop_ShipWreck_02_Collision.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Flower_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Env_Rock_05.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coconut_02.fbx
+  - Assets/Nature Assests/PNB_Tropical_Jungle/Models/SM_Prop_Coral_07.fbx
+  uvOverlapAssetList: 0000000000000000ffffffff00000000000000000000000000000000000000000000000001010000010100000101000001010000000000000000000001010000010100000101000001010000000000000000000001010000000000000000000000000000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000010100000000000000000000010100000000000000000000000000000000000000000000010100000101000001010000000000000101000000000000010100000101000001010000010100000101000001010000000000000101000001010000010100000000000000000000010100000000000000000000010100000101000001010000000000000101000000000000000000000000000001010000010100000101000000000000010100000101000000000000010100000101000000000000010100000000000001010000010100000000000001010000000000000000000000000000000000000101000000000000000000000000000000000000000000000000000000000000010100000101000000000000000000000101000001010000000000000101000000000000000000000101000001010000010100000000000001010000000000000101000000000000000000000101000001010000000000000101000001010000000000000101000000000000010100000000000001010000000000000101000000000000010100000000000001010000010100000101000000000000010100000000000001010000010100000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000101000001010000010100000000000001010000010100000101000001010000010100000101000000000000010100000101000001010000010100000000000001010000010100000101000001010000010100000000000000000000010100000000000000000000000000000000000001010000010100000000000000000000000000000000000000000000000000000101000001010000010100000101000000000000000000000000000000000000010100000000000001010000010100000101000001010000000000000000000001010000000000000101000000000000000000000000000000000000000000000000000000000000010100000101000001010000000000000000000001010000010100000000000001010000000000000101000000000000010100000000000000000000010100000000000000000000010100000000000001010000000000000000000001010000000000000000000001010000000000000000000001010000000000000101000000000000000000000000000001010000010100000000000000000000010100000101000001010000000000000101000000000000000000000000000001010000000000000101000001010000000000000000000001010000000000000000000000000000010100000000000001010000000000000000000001010000000000000000000001010000000000000000000000000000000000000101000000000000010100000101000001010000000000000101000000000000010100000101000001010000000000000000000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 1
   gpuName: NVIDIA GeForce RTX 4070 Ti
@@ -654,7 +917,7 @@ MonoBehaviour:
   renderSettingsRTPVWidth: 640
   renderSettingsRTPVHeight: 360
   tagOverrides: []
-  modifiedMeshPaddingArray: 3e0000004000000042000000
-  modifiedMeshUnwrapperArray: 000000000000000000000000
+  modifiedMeshPaddingArray: 18000000190000001a00000010000000
+  modifiedMeshUnwrapperArray: 00000000000000000000000000000000
   texSettingsKey: []
   texSettingsVal: []
