@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 91f679add7c0ddd4a9de193e3be5572d
+guid: 2d23fbd1a0a1682498eed6d8c77de2bd
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
+  - unity_Lightmaps: {instanceID: 0}
+  - unity_LightmapsInd: {instanceID: 0}
+  - unity_ShadowMasks: {instanceID: 0}
   - _Control: {instanceID: 0}
   - _Splat3: {instanceID: 0}
   - _Splat2: {fileID: 2800000, guid: 579c64197f4898f418f3470d6020708f, type: 3}
