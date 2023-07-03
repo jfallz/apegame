@@ -10,7 +10,7 @@ Material:
   m_Name: Skybox_Tropical_Mat_01
   m_Shader: {fileID: 4800000, guid: b79e425cce5c90642a8dd66b6852353e, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -24,6 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _Distance: 267
     - _Falloff: 0.8
     - _Offset: -36.8
@@ -32,3 +33,5 @@ Material:
     m_Colors:
     - _ColorBottom: {r: 0.62416, g: 0.80794567, b: 0.83, a: 0}
     - _ColorTop: {r: 0, g: 0.6235643, b: 0.90588236, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

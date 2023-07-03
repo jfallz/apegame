@@ -10,7 +10,7 @@ Material:
   m_Name: Water_River_01
   m_Shader: {fileID: 4800000, guid: 276a39a5a210b124885f0eff3e80f1f3, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -132,6 +132,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _BumpScale: 1
     - _CausticDepthFade: 11.22
     - _CausticScale: 3
@@ -150,6 +151,7 @@ Material:
     - _FoamDepth1: 0
     - _FoamFalloff: -56
     - _FoamFalloff1: 0
+    - _FoamGlowMultiplier: 1
     - _FoamShoreline: 0.94
     - _FoamSize: 1
     - _FoamSize1: 0.019

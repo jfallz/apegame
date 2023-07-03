@@ -2,18 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 8
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Tree_Mat_02
   m_Shader: {fileID: 4800000, guid: 6697e1f185bc8b840a2f02567abf15b5, type: 3}
-  m_ValidKeywords:
-  - LOD_FADE_CROSSFADE
-  m_InvalidKeywords:
-  - _FROSTINGSWITCH_ON
-  m_LightmapFlags: 0
+  m_ShaderKeywords: _FROSTINGSWITCH_ON
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -170,8 +167,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _Big_Wave: 10
     - _Big_WindAmount: 1.22
     - _Big_Windspeed: 1.84
@@ -200,16 +197,16 @@ Material:
     - _JitterAmount: 0.315
     - _JitterFreq: 0.507
     - _LOD_FADE_CROSSFADE: 1
-    - _LOD_FADE_CROSSFADE_in: 1
-    - _LOD_FADE_CROSSFADE_out: 1
+    - _LOD_FADE_CROSSFADE_in: 0
+    - _LOD_FADE_CROSSFADE_out: 0
     - _LeafBigNoiseAmount: 0.159
     - _LeafBigNoiseScale: 1
     - _LeafFlatColourSwitch: 0
     - _LeafMetallic: 0
     - _LeafNoiseAmount: 0.017
     - _LeafNoiseScale: 1
-    - _LeafNormalAmount: 0.506
-    - _LeafSmoothness: 0
+    - _LeafNormalAmount: 0.5
+    - _LeafSmoothness: 0.2
     - _Metallic: 0.132
     - _Mode: 0
     - _NormalAmount: 0.5
@@ -232,7 +229,7 @@ Material:
     - _TrunkFlatColourSwitch: 0
     - _TrunkMetallic: 0
     - _TrunkNormalAmount: 0.5
-    - _TrunkSmoothness: 0
+    - _TrunkSmoothness: 0.2
     - _UVSec: 0
     - _WindAmount: 1
     - _WindBaseline: 0.247
@@ -266,9 +263,9 @@ Material:
     - _FrostingColour: {r: 0.45345885, g: 0.6039216, b: 0.07730198, a: 0}
     - _GustHighlight: {r: 0.1132075, g: 0.1132075, b: 0.1132075, a: 0}
     - _GustSmoothing: {r: 0.5, g: 0.5, b: 0.5, a: 0}
-    - _LeafBaseColour: {r: 0.27645347, g: 1, b: 0.0047169924, a: 0}
-    - _LeafNoiseColour: {r: 0.54145795, g: 0.6320754, b: 0.19975968, a: 1}
-    - _LeafNoiseLargeColour: {r: 0, g: 0, b: 0, a: 0}
+    - _LeafBaseColour: {r: 0.39526573, g: 0.5764706, b: 0.07843136, a: 0}
+    - _LeafNoiseColour: {r: 0.1677404, g: 0.254717, b: 0, a: 0}
+    - _LeafNoiseLargeColour: {r: 0.4282872, g: 0.4901961, b: 0.007843124, a: 0}
     - _LeafTint: {r: 0.07843138, g: 0.02015968, b: 0, a: 0}
     - _SnowColour: {r: 0.7718434, g: 1, b: 0.1839623, a: 0}
     - _Tint: {r: 0, g: 0, b: 0, a: 0}
