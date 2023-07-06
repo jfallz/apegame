@@ -13,7 +13,7 @@ Material:
   - LOD_FADE_CROSSFADE
   m_InvalidKeywords: []
   m_LightmapFlags: 0
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -188,7 +188,7 @@ Material:
     - _LeafBigNoiseAmount: 0
     - _LeafBigNoiseScale: 1
     - _LeafFlatColourSwitch: 0
-    - _LeafMetallic: 0.144
+    - _LeafMetallic: 0
     - _LeafNoiseAmount: 0
     - _LeafNoiseScale: 1
     - _LeafNormalAmount: 0.5
