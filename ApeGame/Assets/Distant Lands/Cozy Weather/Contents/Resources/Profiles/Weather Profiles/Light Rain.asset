@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc9e8ccf7e1f314da24a604c1a11094, type: 3}
   m_Name: Light Rain
   m_EditorClassIdentifier: 
-  weatherTime: {x: 60, y: 120}
-  likelihood: 1.46
+  weatherTime: {x: 36.01, y: 176.42}
+  likelihood: 0.1
   forecastNext:
   - {fileID: 11400000, guid: 3500d156aa5168944b5dd4b8e84ff00c, type: 2}
   forecastModifierMethod: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
     borderHeight: 0.5
     borderVariation: 0.9
     borderEffect: 1
-  fogDensity: 1.2
+  fogDensity: 0.8
   FX:
   - {fileID: 11400000, guid: 82f08f29e9d166f42a369ee7f50562ba, type: 2}
   - {fileID: 11400000, guid: 15b37cbb30f878c489770528e2780033, type: 2}

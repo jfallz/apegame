@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Default Atmosphere
   m_EditorClassIdentifier: 
   win1: 1
-  win2: 0
-  win3: 0
+  win2: 1
+  win3: 1
   win4: 0
   skyZenithColor:
     mode: 0
@@ -2633,7 +2633,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 14.9
+    floatVal: 0.8
     curveVal:
       serializedVersion: 2
       m_Curve:
@@ -3035,7 +3035,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 25
+    floatVal: 30
     curveVal:
       serializedVersion: 2
       m_Curve:

@@ -52,8 +52,8 @@ AudioMixerController:
   m_AudioMixerGroupViews:
   - guids:
     - e15d08c4357a18544b28319d18573e7c
-    - 8b96c6ab21a10be469fccc35fa0fae8f
     - cef66151b7295514bb3ded048dffa98f
+    - 8b96c6ab21a10be469fccc35fa0fae8f
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -177,6 +177,6 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 5683915968450650531}
   m_UserColorIndex: 5
-  m_Mute: 0
+  m_Mute: 1
   m_Solo: 0
   m_BypassEffects: 0
