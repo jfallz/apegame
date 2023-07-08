@@ -135,8 +135,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _CausticDepthFade: 15.5
-    - _CausticScale: 0.1
+    - _CausticDepthFade: 4.59
+    - _CausticScale: -0.19
     - _CausticSpeed: 1
     - _ColourNoiseScale1: 0.019
     - _Cutoff: 0.5
