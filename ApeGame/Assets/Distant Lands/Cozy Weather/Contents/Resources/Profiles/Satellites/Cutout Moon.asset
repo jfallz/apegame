@@ -12,15 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac36c75b9c2af5b42a8f1907e068490d, type: 3}
   m_Name: Cutout Moon
   m_EditorClassIdentifier: 
-  satelliteReference: {fileID: 2012264065759116755, guid: c773e0c0053230d4e908f8988b4f88da,
-    type: 3}
+  satelliteReference: {fileID: 2012264065759116755, guid: c773e0c0053230d4e908f8988b4f88da, type: 3}
   orbitRef: {fileID: 0}
   moonRef: {fileID: 0}
   lightRef: {fileID: 0}
   size: 1
   distance: 1
   useLight: 1
-  flare: {fileID: 11400000, guid: e3db97a2c8764cf4d9b4e3a9a81e38a7, type: 2}
+  flare: {fileID: 0}
   lightColorMultiplier: {r: 1.0392967, g: 1.3978724, b: 1.7079917, a: 1}
   castShadows: 2
   orbitOffset: 90
@@ -28,7 +27,7 @@ MonoBehaviour:
   satelliteRotateSpeed: 0.2
   satelliteRotateAxis: {x: 1, y: 1, z: 0}
   satelliteDirection: 0
-  satelliteRotation: 212112.36
+  satelliteRotation: 212130.02
   satellitePitch: 0
   changedLastFrame: 0
-  open: 0
+  open: 1

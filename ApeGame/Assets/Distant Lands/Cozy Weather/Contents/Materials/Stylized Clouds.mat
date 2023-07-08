@@ -102,15 +102,15 @@ Material:
     - _BorderEffect: 1
     - _BorderHeight: 0.5
     - _BorderSmoothness: 0.928
-    - _BorderVariation: 0.94
+    - _BorderVariation: 0.9
     - _BumpScale: 1
     - _ChemtrailsMoveSpeed: 0.5
-    - _ChemtrailsMultiplier: 0
+    - _ChemtrailsMultiplier: 0.211
     - _ChemtrialMoveSpeed: 1
     - _ChemtrialsMoveSpeed: 1
     - _CirrostratusMoveSpeed: 0.5
     - _CirrostratusMoveSpeed1: 0
-    - _CirrostratusMultiplier: 0
+    - _CirrostratusMultiplier: 0.106
     - _CirrusMoveSpeed: 0.5
     - _CirrusMultiplier: 0
     - _ClippingThreshold: 0.5
@@ -127,7 +127,7 @@ Material:
     - _Coverage: 0.61
     - _Coverage1: 0
     - _CumulusCoverage: 1
-    - _CumulusCoverageMultiplier: 0.2109
+    - _CumulusCoverageMultiplier: 0.1448
     - _CumulusCoverageMultiplier1: 1
     - _Cutoff: 0.5
     - _DetailAmount: 30
@@ -217,7 +217,7 @@ Material:
     - _SecondLayer: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 0}
     - _SecondLayer1: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 0}
     - _ShadowDirection: {r: 0, g: 0, b: 0, a: 0}
-    - _StormDirection: {r: -0.4253946, g: -0, b: 0.90500796, a: 0}
+    - _StormDirection: {r: -0.28142726, g: -0, b: -0.95958257, a: 0}
     - _SunDirection: {r: -0.73202527, g: 0.14687335, b: 0.6652575, a: 0}
     - _SunDirection1: {r: 0, g: 0, b: 0, a: 0}
     - _TexturePanDirection: {r: 0.1, g: 1, b: 0.1, a: 0}

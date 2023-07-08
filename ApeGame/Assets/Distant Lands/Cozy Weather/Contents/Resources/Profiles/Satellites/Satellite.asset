@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac36c75b9c2af5b42a8f1907e068490d, type: 3}
   m_Name: Satellite
   m_EditorClassIdentifier: 
-  satelliteReference: {fileID: 3583570273654034466, guid: b49234df511a5dd459c139031feaf281,
-    type: 3}
+  satelliteReference: {fileID: 3583570273654034466, guid: b49234df511a5dd459c139031feaf281, type: 3}
   orbitRef: {fileID: 0}
   moonRef: {fileID: 0}
   lightRef: {fileID: 0}
@@ -28,7 +27,7 @@ MonoBehaviour:
   satelliteRotateSpeed: 5
   satelliteRotateAxis: {x: 1, y: 1, z: 1}
   satelliteDirection: 47.8
-  satelliteRotation: 215072.64
+  satelliteRotation: 220911.92
   satellitePitch: 22.8
   changedLastFrame: 0
   open: 0
