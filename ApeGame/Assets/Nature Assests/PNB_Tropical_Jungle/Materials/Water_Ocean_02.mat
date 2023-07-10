@@ -172,7 +172,7 @@ Material:
     - _ODM: 0.02
     - _OcclusionStrength: 1
     - _Opacity: 1
-    - _OpacityFalloff: 9.39
+    - _OpacityFalloff: 18.69
     - _OpacityMin: 0.049
     - _OverallFalloff: 0.45
     - _Parallax: 0.02
