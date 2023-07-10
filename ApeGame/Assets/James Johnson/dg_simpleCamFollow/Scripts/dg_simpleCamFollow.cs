@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dg_simpleCamFollow : MonoBehaviour
 {
-    [SerializeField] private Transform target;
+    private Transform target;
     [Range(1f,40f)] public float laziness = 10f;
     public bool lookAtTarget = true;
     public bool takeOffsetFromInitialPos = true;
@@ -13,7 +13,7 @@ public class dg_simpleCamFollow : MonoBehaviour
     bool warningAlreadyShown = false;
 
     private void Start() {
-        target = target.GetComponent<Transform>();
+        target = GameObject.FindWithTag("Player").GetComponent<Transform>();
         if (takeOffsetFromInitialPos && target != null) generalOffset = transform.position - target.position;
     }
 

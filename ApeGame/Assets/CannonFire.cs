@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Rendering.PostProcessing;
 
 
 public class CannonFire : MonoBehaviour
@@ -13,6 +13,11 @@ public class CannonFire : MonoBehaviour
     public float maxRotation = 90;
     public float curAngle = 0f;
     public float force = 800f;
+    public GameObject camera;
+    private PostProcessVolume postProcessVolume;
+    private ChromaticAberration chromaticAberration;
+    private float currentIntensity = 0f;
+    private Coroutine intensityCoroutine;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +47,51 @@ public class CannonFire : MonoBehaviour
         }
     }
 
+    public void Crash() {
+        // induce stress on camera for shaking effect
+        StressReceiver trauma = camera.GetComponent<StressReceiver>();
+        trauma.InduceStress(5f);
+
+        postProcessVolume = camera.GetComponent<PostProcessVolume>();
+        postProcessVolume.profile.TryGetSettings(out chromaticAberration);
+        if (chromaticAberration != null)
+        {
+            if(intensityCoroutine != null) {
+                StopCoroutine(intensityCoroutine);
+            }
+            chromaticAberration.intensity.value = 1f;
+            currentIntensity = .7f;
+            intensityCoroutine = StartCoroutine(ChangeIntensityOverTime(.2f, .2f));
+        }
+
+    }
+
+    private IEnumerator ChangeIntensityOverTime(float targetIntensity, float duration) {
+        float elapsedTime = 0f;
+        float startIntensity = currentIntensity;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+            // Calculate the interpolated intensity based on time
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            currentIntensity = Mathf.Lerp(startIntensity, targetIntensity, t);
+
+            // Set the chromatic aberration intensity
+            chromaticAberration.intensity.value = currentIntensity;
+
+            yield return null;
+        }
+
+        // Ensure the final intensity is set correctly
+        currentIntensity = targetIntensity;
+        chromaticAberration.intensity.value = currentIntensity;
+
+        // Reset the coroutine reference
+        intensityCoroutine = null;
+    }
+
     void Fire() {
         float angle = (curAngle * -1f) * Mathf.Deg2Rad;
         float xComponent = Mathf.Cos(angle) * force;
@@ -52,25 +102,26 @@ public class CannonFire : MonoBehaviour
         
         Rigidbody rb = newPlayer.GetComponent<Rigidbody>();
          // Add the ConfigurableJoint component to the target Rigidbody
-        ConfigurableJoint joint; // Reference to the ConfigurableJoint component
+        //ConfigurableJoint joint; // Reference to the ConfigurableJoint component
 
-        joint = rb.gameObject.AddComponent<ConfigurableJoint>();
+       // joint = rb.gameObject.AddComponent<ConfigurableJoint>();
 
         // Configure the joint properties
-        joint.angularXMotion = ConfigurableJointMotion.Limited; // Allow rotation along the X-axis within limits
+        //joint.angularXMotion = ConfigurableJointMotion.Limited; // Allow rotation along the X-axis within limits
 
         rb.isKinematic = false;
         Vector3 forceApply = new Vector3(0f, xComponent, zComponent);
         rb.AddForce(forceApply * 1f, ForceMode.Impulse);
                 // Get the current inertia tensor
-        Vector3 inertiaTensor = rb.inertiaTensor;
+        //Vector3 inertiaTensor = rb.inertiaTensor;
 
         // Set the X component to zero
-        inertiaTensor.x = 0f;
+        //inertiaTensor.x = 0f;
 
         // Assign the modified inertia tensor back to the Rigidbody
         //rb.inertiaTensor = inertiaTensor;
         Aiming = false;
+        Crash();
         //Destroy(joint);
     }
 }
