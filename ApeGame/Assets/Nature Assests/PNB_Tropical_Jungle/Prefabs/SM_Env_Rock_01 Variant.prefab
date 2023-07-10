@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2967615195126475115, guid: a8b45bb4d555207469b7356c92071ecd, type: 3}
       propertyPath: m_Name
-      value: SM_Env_Rock_01
+      value: SM_Env_Rock_01 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3616366568302119102, guid: a8b45bb4d555207469b7356c92071ecd, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -61,3 +61,27 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4571d71734020c04e8bb0349e853c4e9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b45bb4d555207469b7356c92071ecd, type: 3}
+--- !u!1 &6638646988171494536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2967615195126475115, guid: a8b45bb4d555207469b7356c92071ecd, type: 3}
+  m_PrefabInstance: {fileID: 8434714374076984803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!205 &9048897685184213610
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6638646988171494536}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0000030994415, y: 0.4680395, z: 0.001260519}
+  m_Size: 2.2568066
+  m_FadeMode: 1
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.031427596
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6190906944249843700, guid: b6d18a208dd807441bae59059f73fb01, type: 3}
+  m_Enabled: 1

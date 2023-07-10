@@ -190,13 +190,13 @@ QualitySettings:
     name: Ultra
     pixelLightCount: 4
     shadows: 2
-    shadowResolution: 2
-    shadowProjection: 1
+    shadowResolution: 3
+    shadowProjection: 0
     shadowCascades: 4
-    shadowDistance: 50000
+    shadowDistance: 10000
     shadowNearPlaneOffset: 3
     shadowCascade2Split: 0.33333334
-    shadowCascade4Split: {x: 0.09313383, y: 0.24948215, z: 0.4666667}
+    shadowCascade4Split: {x: 0.08968164, y: 0.24948233, z: 0.4666667}
     shadowmaskMode: 1
     skinWeights: 4
     textureQuality: 0
