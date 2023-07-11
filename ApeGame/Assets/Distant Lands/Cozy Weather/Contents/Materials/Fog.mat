@@ -71,9 +71,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FlareSquish: 4.65
-    - _FogColorStart1: 2
-    - _FogColorStart2: 5
-    - _FogColorStart3: 10
+    - _FogColorStart1: 4.9
+    - _FogColorStart2: 11.8
+    - _FogColorStart3: 20
     - _FogColorStart4: 30
     - _FogDensity: 2
     - _FogDepthMultiplier: 0.25

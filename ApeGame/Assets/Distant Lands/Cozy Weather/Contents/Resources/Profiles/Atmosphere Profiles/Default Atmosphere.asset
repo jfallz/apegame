@@ -2253,9 +2253,9 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     systemContainsProp: 1
-  fogStart1: 2
-  fogStart2: 5
-  fogStart3: 10
+  fogStart1: 4.9
+  fogStart2: 11.8
+  fogStart3: 20
   fogStart4: 30
   fogHeight:
     mode: 1
