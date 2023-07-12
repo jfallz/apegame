@@ -11,13 +11,17 @@ public class GameManager : MonoBehaviour
     public GameObject prefabToInstantiate;
     public bool dead = false; // used to show player shop or restart option (They Died lol)
     public bool restart = false; // if true, will restart the player and then reset bool to false
+    public float TimeT = 0f;
     
 
-    public void Update() {
-        if(restart)
-            Restart();
-        if(dead)
+    public void FixedUpdate() {
+        if(dead) {
             Death();
+        } else if(Physics.Raycast(GameObject.FindWithTag("Player").transform.position, Vector3.down, 7f)) {
+            Rigidbody rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
+            if(rb.velocity.magnitude < 1)
+                dead = true;
+        }
     }
 
 
