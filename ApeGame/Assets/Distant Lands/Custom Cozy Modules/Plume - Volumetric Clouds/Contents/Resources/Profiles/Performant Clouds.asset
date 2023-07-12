@@ -17,7 +17,7 @@ MonoBehaviour:
   chunkSize: 500
   minChunkHeight: 0
   maxChunkHeight: 402
-  renderDistance: 7
+  renderDistance: 8
   cloudHeight: 3000
   cloudHeightDistrubution: 340
   noiseScale: 7

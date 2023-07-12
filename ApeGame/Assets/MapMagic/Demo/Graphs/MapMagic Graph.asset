@@ -1747,7 +1747,7 @@ MonoBehaviour:
       - guiDebug
       values:
       - t: 1
-        v: 3
+        v: 2
       - t: 255
         v: 12
       - t: 255
@@ -1757,7 +1757,7 @@ MonoBehaviour:
       - t: 11
         v: 7271827957994225666
       - t: 11
-        v: 63
+        v: 65
       - t: 255
         v: 66
       - t: 255
