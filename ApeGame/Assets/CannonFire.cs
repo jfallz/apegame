@@ -13,18 +13,15 @@ public class CannonFire : MonoBehaviour
     public float maxRotation = 90;
     public float curAngle = 0f;
     public float force = 800f;
-    public GameObject camera;
+    private GameObject camera;
     private PostProcessVolume postProcessVolume;
     private ChromaticAberration chromaticAberration;
     private float currentIntensity = 0f;
     private Coroutine intensityCoroutine;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void Start() {
+        camera = GameObject.FindWithTag("MainCamera");
     }
-
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -34,7 +31,7 @@ public class CannonFire : MonoBehaviour
             } else if(Input.GetKey(KeyCode.D)) {
                 curAngle -= 1f;
             }
-            print(curAngle);
+            //print(curAngle);
 
             Vector3 newRotation = new Vector3(curAngle, -180, 0);
             transform.eulerAngles = newRotation;

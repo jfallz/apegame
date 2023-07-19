@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 1795747578551749226}
   m_Layer: 0
   m_Name: Cannon1
-  m_TagString: Untagged
+  m_TagString: Cart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1993,13 +1993,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d37164adc10b542bb5d8fb22a30dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerObject: {fileID: 6830966168780438209, guid: 43b9909390a351048ad1f9fa317c1987, type: 3}
+  PlayerObject: {fileID: 2664216178088508927, guid: fbcb40a2a545bc448a41a6ba3cc78558, type: 3}
   Aiming: 1
   minRotation: -90
   maxRotation: 0
   curAngle: -45
-  force: 5000
-  camera: {fileID: 0}
+  force: 20000
 --- !u!1 &7946687409936756573
 GameObject:
   m_ObjectHideFlags: 0
