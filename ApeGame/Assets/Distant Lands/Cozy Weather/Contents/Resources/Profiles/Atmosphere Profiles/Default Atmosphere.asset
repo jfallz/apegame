@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Default Atmosphere
   m_EditorClassIdentifier: 
   win1: 1
-  win2: 0
+  win2: 1
   win3: 1
   win4: 0
   skyZenithColor:
