@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public CannonFire scriptRef;
-    public int distanceTraveled;
+    public int distanceTraveled = 0;
     public int maxDistance = 0;
+    private int startingDistance;
     [SerializeField] public float currency;
     public GameObject prefabToInstantiate;
     public bool restart = false; // if true, will restart the player and then reset bool to false
     public float TimeT = 0f;
     private bool inFlight = false; 
+    private bool launched = false;
     
     // public void Start() {
     //     scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
@@ -20,17 +23,26 @@ public class GameManager : MonoBehaviour
     public void FixedUpdate() {
         scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
         inFlight = !scriptRef.Aiming;
-        print(inFlight);
         if(inFlight) {
+            if(!launched) {
+                startingDistance = (int)GameObject.FindWithTag("Player").transform.position.z;
+                launched = true;
+            }
             if(Physics.Raycast(GameObject.FindWithTag("Player").transform.position, Vector3.down, 7f)) {
                 Rigidbody rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
                 if(rb.velocity.magnitude < 1) 
                     Death();
             }
+            statTrack();
         }
     }
 
-
+    public void statTrack() {
+        GameObject p = GameObject.FindWithTag("Player");
+        distanceTraveled = (int)(p.transform.position.z) - startingDistance;
+        TextMeshProUGUI d = GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>();
+        d.text = "DISTANCE: " + distanceTraveled;
+    }
     public void Death() {
         GameObject targetObject = GameObject.FindWithTag("Cart");
         Vector3 targetPosition = targetObject.transform.position;
@@ -40,6 +52,12 @@ public class GameManager : MonoBehaviour
 
             // Instantiate the prefab at the target position with the same rotation.
         GameObject newObject = Instantiate(prefabToInstantiate, targetPosition, targetRotation);
+
+        currency = distanceTraveled * .25f;
+        TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
+        c.text = "CURRENCY: " + (int)currency;
+        distanceTraveled = 0;
+        launched = false;
     }
 
     public void ShopMenu() {
