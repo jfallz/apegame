@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public CannonFire scriptRef;
     public int distanceTraveled = 0;
     public int maxDistance = 0;
+    private float speed = 0f;
     private int startingDistance;
     [SerializeField] public float currency;
     public GameObject prefabToInstantiate;
@@ -15,7 +16,10 @@ public class GameManager : MonoBehaviour
     public float TimeT = 0f;
     private bool inFlight = false; 
     private bool launched = false;
-    
+    public GameObject speedometer;
+    public float min = 311f;
+    public float max = 50f;
+
     // public void Start() {
     //     scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
     // }
@@ -24,15 +28,22 @@ public class GameManager : MonoBehaviour
         scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
         inFlight = !scriptRef.Aiming;
         if(inFlight) {
-            if(!launched) {
+            Rigidbody rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
+            if (!launched) {
                 startingDistance = (int)GameObject.FindWithTag("Player").transform.position.z;
                 launched = true;
+
             }
             if(Physics.Raycast(GameObject.FindWithTag("Player").transform.position, Vector3.down, 7f)) {
-                Rigidbody rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
                 if(rb.velocity.magnitude < 1) 
                     Death();
             }
+            float angle = min - rb.velocity.magnitude / 2f;
+
+            speedometer.transform.eulerAngles = new Vector3(speedometer.transform.eulerAngles.x,
+                                                            speedometer.transform.eulerAngles.y,
+                                                            angle);
+            speed = rb.velocity.magnitude;
             statTrack();
         }
     }
@@ -58,6 +69,7 @@ public class GameManager : MonoBehaviour
         c.text = "CURRENCY: " + (int)currency;
         distanceTraveled = 0;
         launched = false;
+
     }
 
     public void ShopMenu() {
