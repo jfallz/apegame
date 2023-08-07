@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public float maxSpeed = 0f;
     public float maxAltitude = 0f;
     // ----
-    private float speed = 0f;
     private int startingDistance;
     [SerializeField] public float currency;
     public GameObject prefabToInstantiate;
@@ -57,9 +56,16 @@ public class GameManager : MonoBehaviour
 
     public void statTrack() {
         GameObject p = GameObject.FindWithTag("Player");
+        float speed = p.GetComponent<Rigidbody>().velocity.magnitude;
         distanceTraveled = (int)(p.transform.position.z) - startingDistance;
         TextMeshProUGUI d = GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>();
         d.text = "DISTANCE: " + distanceTraveled;
+        if(speed > maxSpeed) {
+            maxSpeed = speed;
+        }
+
+        if(distanceTraveled > maxDistance)
+            maxDistance = distanceTraveled;
     }
     public void Death() {
         currency = distanceTraveled * .25f;
