@@ -19,7 +19,7 @@ MonoBehaviour:
   maxChunkHeight: 402
   renderDistance: 8
   cloudHeight: 3000
-  cloudHeightDistrubution: 340
+  cloudHeightDistrubution: 500
   noiseScale: 7
   seed: 1
   windSpeed: {x: 0.2, y: 0.5, z: 5}
