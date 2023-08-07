@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mostly Clear
   m_EditorClassIdentifier: 
   weatherTime: {x: 30, y: 90}
-  likelihood: 1
+  likelihood: 2
   forecastNext:
   - {fileID: 11400000, guid: ae94c1a397a01e442a11e8b23ebb1cef, type: 2}
   - {fileID: 11400000, guid: 28ce0162a9eccda47a345fd44e9e6e15, type: 2}
