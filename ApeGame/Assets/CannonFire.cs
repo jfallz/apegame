@@ -38,10 +38,9 @@ public class CannonFire : MonoBehaviour
             Vector3 newRotation = new Vector3(curAngle, -180, 0);
             transform.eulerAngles = newRotation;
 
-            if(Input.GetKey(KeyCode.Space))
+            if(Input.GetKey(KeyCode.Space) && Aiming)
             {
-                print("clicked");
-          
+                Aiming = false;
                 Fire();
             }
         }
@@ -93,6 +92,17 @@ public class CannonFire : MonoBehaviour
     }
 
     void Fire() {
+        StartCoroutine(ExampleCoroutine());
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        // animation
+        //GameObject.Find("Cylinder").GetComponent<Animator>().Play("cANNONsHAKE");
+        GameObject.Find("Cylinder").GetComponent<Animator>().Play("CANNONfire");
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(.05f);
+
         // particle effects
         for(int i = 0; i < explosionParticles.Length; ++i) {
             explosionParticles[i].Play();
@@ -127,8 +137,10 @@ public class CannonFire : MonoBehaviour
 
         // Assign the modified inertia tensor back to the Rigidbody
         //rb.inertiaTensor = inertiaTensor;
-        Aiming = false;
         Crash();
+
         //Destroy(joint);
+
     }
 }
+
