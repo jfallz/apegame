@@ -1186,7 +1186,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 0.13
+    floatVal: 0
     curveVal:
       serializedVersion: 2
       m_Curve:
@@ -1244,7 +1244,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 0.64
+    floatVal: 0.51
     curveVal:
       serializedVersion: 2
       m_Curve:
@@ -1302,7 +1302,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 0.105
+    floatVal: 0.145
     curveVal:
       serializedVersion: 2
       m_Curve:
@@ -2255,8 +2255,8 @@ MonoBehaviour:
     systemContainsProp: 1
   fogStart1: 4.9
   fogStart2: 11.8
-  fogStart3: 20
-  fogStart4: 33.4
+  fogStart3: 27.3
+  fogStart4: 44.7
   fogHeight:
     mode: 1
     colorVal: {r: 1, g: 1, b: 1, a: 1}
@@ -2289,7 +2289,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 0.85
+    floatVal: 0.739
     curveVal:
       serializedVersion: 2
       m_Curve:

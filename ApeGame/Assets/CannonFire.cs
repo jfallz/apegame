@@ -6,6 +6,7 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class CannonFire : MonoBehaviour
 {
+    public AudioSource soundCannon;
     public GameObject PlayerObject;
     GameObject newPlayer;
     public bool Aiming = true;
@@ -39,6 +40,7 @@ public class CannonFire : MonoBehaviour
             if(Input.GetKey(KeyCode.Space))
             {
                 print("clicked");
+          
                 Fire();
             }
         }
@@ -90,6 +92,7 @@ public class CannonFire : MonoBehaviour
     }
 
     void Fire() {
+        soundCannon.Play();
         float angle = (curAngle * -1f) * Mathf.Deg2Rad;
         float xComponent = Mathf.Cos(angle) * force;
         float zComponent = Mathf.Sin(angle) * force;
