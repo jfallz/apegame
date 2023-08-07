@@ -7,6 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class CannonFire : MonoBehaviour
 {
     public AudioSource soundCannon;
+    public ParticleSystem[] explosionParticles;
     public GameObject PlayerObject;
     GameObject newPlayer;
     public bool Aiming = true;
@@ -92,6 +93,12 @@ public class CannonFire : MonoBehaviour
     }
 
     void Fire() {
+        // particle effects
+        for(int i = 0; i < explosionParticles.Length; ++i) {
+            explosionParticles[i].Play();
+        }
+
+        // play sound
         soundCannon.Play();
         float angle = (curAngle * -1f) * Mathf.Deg2Rad;
         float xComponent = Mathf.Cos(angle) * force;
