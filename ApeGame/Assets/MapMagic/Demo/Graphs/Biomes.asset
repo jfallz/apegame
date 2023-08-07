@@ -320,7 +320,7 @@ MonoBehaviour:
       - t: 11
         v: 1634615349712257028
       - t: 11
-        v: 35
+        v: 37
       - t: 255
         v: 24
       - t: 255
@@ -449,7 +449,7 @@ MonoBehaviour:
       fields: []
       values: []
       special: 
-      uniObj: {fileID: 11400000, guid: e1b9516f86f71c844ab41eea24fe8941, type: 2}
+      uniObj: {fileID: 11400000, guid: b6d4df9a5a4e30c43b4dcd39d9337be3, type: 2}
     - refId: 20
       type: MapMagic.Nodes.Biomes.BiomeLayer, MapMagic, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
@@ -469,7 +469,7 @@ MonoBehaviour:
       - t: 11
         v: 6506736090341179393
       - t: 11
-        v: 6597427107935027386
+        v: 0
       - t: 11
         v: 6597427107935027386
       - t: 255
@@ -525,9 +525,9 @@ MonoBehaviour:
       - y
       values:
       - t: 2
-        v: 3276275712
+        v: 3271622656
       - t: 2
-        v: 3300761600
+        v: 3300777984
       special: 
       uniObj: {fileID: 0}
     - refId: 25
@@ -1035,8 +1035,6 @@ MonoBehaviour:
       - t: 255
         v: 18
       - t: 255
-        v: 20
-      - t: 255
         v: 42
       special: 
       uniObj: {fileID: 0}
@@ -1059,8 +1057,6 @@ MonoBehaviour:
         v: 26
       - t: 255
         v: 9
-      - t: 255
-        v: 36
       - t: 255
         v: 26
       special: 
