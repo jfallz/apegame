@@ -50,7 +50,7 @@ namespace DistantLands.Cozy
 
         [Tooltip("How many frames should pass before the noise renders again? A value of 0 renders every frame and a value of 30 renders once every 60 frames.")]
         [Range(0, 60)]
-        public int framesBetweenRenders = 10;
+        private int framesBetweenRenders = 10000;
         int framesLeft;
 
 

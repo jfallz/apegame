@@ -2173,7 +2173,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    floatVal: 0.25
+    floatVal: 0.21
     curveVal:
       serializedVersion: 2
       m_Curve:

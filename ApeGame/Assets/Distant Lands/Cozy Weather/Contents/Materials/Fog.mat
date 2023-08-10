@@ -76,7 +76,7 @@ Material:
     - _FogColorStart3: 27.3
     - _FogColorStart4: 44.7
     - _FogDensity: 2
-    - _FogDepthMultiplier: 0.25
+    - _FogDepthMultiplier: 0.21
     - _FogDepthMultiplier1: 1
     - _FogIntensity: 1
     - _FogIntensity1: 1

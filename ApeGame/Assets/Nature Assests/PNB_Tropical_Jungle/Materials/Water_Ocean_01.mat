@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water_Ocean_01
   m_Shader: {fileID: 4800000, guid: 276a39a5a210b124885f0eff3e80f1f3, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -131,6 +132,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _CausticDepthFade: 11.22
@@ -156,7 +158,7 @@ Material:
     - _FoamSize1: 0.019
     - _FoamSmoothness: 0
     - _FoamSmoothness1: 0
-    - _FoamSpread: 2.53
+    - _FoamSpread: 3.3
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -164,7 +166,7 @@ Material:
     - _GlowFalloff: 0.108
     - _Metallic: 0
     - _Mode: 0
-    - _NormalScale: 0.264
+    - _NormalScale: 0
     - _NormalTiling: 0.38
     - _NormalTiling2: 0.1
     - _ODM: 0.02
@@ -177,9 +179,9 @@ Material:
     - _ReflectionPower: 0.32
     - _RippleSpeed: 0.1
     - _ShallowFalloff: 0.4
-    - _Smoothness: 2
+    - _Smoothness: 2.5
     - _SmoothnessTextureChannel: 0
-    - _Specular: 0.026
+    - _Specular: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Tiling: 0.36
@@ -212,12 +214,12 @@ Material:
     - _Wave3DTilingTuffs: -0.18
     - _Wave3DTilingTuffs1: -0.18
     - _Wave3DTilingTufts: -0.04
-    - _WaveAmplitude: 0.15
-    - _WaveDirection: 0
-    - _WaveFoamOpacity: 0.069
+    - _WaveAmplitude: 0.505
+    - _WaveDirection: 1.54
+    - _WaveFoamOpacity: 0.014
     - _WaveNoiseAmount: 2
     - _WaveNoiseScale: 30
-    - _WaveSpeed: 0.094
+    - _WaveSpeed: 0.062
     - _WaveTiling: 0.21
     - _WaveTiling1: 0.2
     - _WaveTiling2: 0.07
