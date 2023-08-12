@@ -2305,7 +2305,41 @@ MonoBehaviour:
   minRotation: -90
   maxRotation: 0
   curAngle: -45
-  force: 4000
+  OpenOutCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.20155323
+      value: 0.39781848
+      inSlope: 0.16353902
+      outSlope: 0.16353902
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.25754893
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2.511328
+      outSlope: 2.511328
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040158816
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  force: 2500
+  forceMult: 2500
 --- !u!114 &1670292975899842434
 MonoBehaviour:
   m_ObjectHideFlags: 0

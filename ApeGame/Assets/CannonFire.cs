@@ -14,12 +14,14 @@ public class CannonFire : MonoBehaviour
     public float minRotation = 0;
     public float maxRotation = 90;
     public float curAngle = 0f;
-    public float force = 800f;
+    [SerializeField] public AnimationCurve OpenOutCurve;
+    public float force;
     private GameObject camera;
     private PostProcessVolume postProcessVolume;
     private ChromaticAberration chromaticAberration;
     private float currentIntensity = 0f;
     private Coroutine intensityCoroutine;
+    public float forceMult = 5000;
 
     public void Start() {
         camera = GameObject.FindWithTag("MainCamera");
@@ -33,7 +35,6 @@ public class CannonFire : MonoBehaviour
             } else if(Input.GetKey(KeyCode.D)) {
                 curAngle -= 1f;
             }
-            //print(curAngle);
 
             Vector3 newRotation = new Vector3(curAngle, -180, 0);
             transform.eulerAngles = newRotation;
@@ -97,6 +98,10 @@ public class CannonFire : MonoBehaviour
 
     IEnumerator ExampleCoroutine()
     {
+        float power = GameObject.Find("PowerBar").GetComponent<MeshMaskScriptUI>().power / 1000f;
+        print("power: " + power);
+        force += (OpenOutCurve.Evaluate(power) * forceMult);
+        print("force: " + force);
         // animation
         //GameObject.Find("Cylinder").GetComponent<Animator>().Play("cANNONsHAKE");
         GameObject.Find("Cylinder").GetComponent<Animator>().Play("CANNONfire");

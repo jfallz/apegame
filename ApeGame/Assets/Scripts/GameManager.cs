@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public float maxAltitude = 0f;
     // ----
     private int startingDistance;
-    [SerializeField] public float currency;
+    [SerializeField] public float currency = 0f;
     public GameObject prefabToInstantiate;
     public GameObject playerMenu;
     public bool restart = false; // if true, will restart the player and then reset bool to false
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject speedometer;
     public float min = 317f;
     public float max = 45f;
+    private bool dead = false;
 
     // public void Start() {
     //     scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
 
             }
             if(Physics.Raycast(GameObject.FindWithTag("Player").transform.position, Vector3.down, 7f)) {
-                if(rb.velocity.magnitude < 1) 
+                if(rb.velocity.magnitude < 1 && !dead) 
                     Death();
             }
 
@@ -68,10 +69,11 @@ public class GameManager : MonoBehaviour
             maxDistance = distanceTraveled;
     }
     public void Death() {
-        currency = distanceTraveled * .25f;
+        currency += distanceTraveled * .25f;
         TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
         c.text = "CURRENCY: " + (int)currency;
         playerMenu.SetActive(true);
+        dead = true;
     }
 
     public void ShopMenu() {
@@ -87,6 +89,7 @@ public class GameManager : MonoBehaviour
             // Instantiate the prefab at the target position with the same rotation.
         GameObject newObject = Instantiate(prefabToInstantiate, targetPosition, targetRotation);
         launched = false;
+        dead = false;
         distanceTraveled = 0;
 
     }

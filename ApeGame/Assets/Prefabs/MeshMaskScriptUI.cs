@@ -7,14 +7,17 @@ public class MeshMaskScriptUI : MaskableGraphic
 {
     float count = 0;
     bool rising = true;
+    public int max = 1000;
+    public int min = 0;
+    public float power = 0f;
   
     protected override void OnPopulateMesh(VertexHelper vertexHelper)
     {
         vertexHelper.Clear();
-
-        if((count * 5f) > 1025) {
+        power = count * 5f;
+        if(power > max) {
             rising = false;
-        } else if((count * 5f) < 200) {
+        } else if(power < min) {
             rising = true;
         }
 
@@ -28,7 +31,7 @@ public class MeshMaskScriptUI : MaskableGraphic
         else
             --count;
         
-        print(vec_10);
+        //print(vec_10);
         vertexHelper.AddUIVertexQuad(new UIVertex[]
         {
             new UIVertex { position = vec_00, color = Color.green },
