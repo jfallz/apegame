@@ -22,8 +22,11 @@ public class CannonFire : MonoBehaviour
     private float currentIntensity = 0f;
     private Coroutine intensityCoroutine;
     public float forceMult = 5000;
+    private MeshMaskScriptUI powerBar;
 
     public void Start() {
+        powerBar = GameObject.Find("PowerBar").GetComponent<MeshMaskScriptUI>();
+        powerBar.active = true;
         camera = GameObject.FindWithTag("MainCamera");
     }
     // Update is called once per frame
@@ -98,7 +101,8 @@ public class CannonFire : MonoBehaviour
 
     IEnumerator ExampleCoroutine()
     {
-        float power = GameObject.Find("PowerBar").GetComponent<MeshMaskScriptUI>().power / 1000f;
+        float power = powerBar.power / 1000f;
+        powerBar.active = false;
         print("power: " + power);
         force += (OpenOutCurve.Evaluate(power) * forceMult);
         print("force: " + force);

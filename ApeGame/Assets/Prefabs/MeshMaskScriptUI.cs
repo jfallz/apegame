@@ -10,7 +10,11 @@ public class MeshMaskScriptUI : MaskableGraphic
     public int max = 1000;
     public int min = 0;
     public float power = 0f;
+    public bool active;
   
+    private void Start() {
+        active = true;
+    }
     protected override void OnPopulateMesh(VertexHelper vertexHelper)
     {
         vertexHelper.Clear();
@@ -44,7 +48,8 @@ public class MeshMaskScriptUI : MaskableGraphic
 
     private void Update()
     {
-        SetVerticesDirty();
+        if(active)
+            SetVerticesDirty();
     }
 
 }

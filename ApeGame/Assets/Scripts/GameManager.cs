@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         float speed = p.GetComponent<Rigidbody>().velocity.magnitude;
         distanceTraveled = (int)(p.transform.position.z) - startingDistance;
         TextMeshProUGUI d = GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>();
-        d.text = "DISTANCE: " + distanceTraveled;
+        d.text = distanceTraveled > 9999 ? FormatNumber(distanceTraveled) + "m" : distanceTraveled + "m";
         if(speed > maxSpeed) {
             maxSpeed = speed;
         }
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     public void Death() {
         currency += distanceTraveled * .25f;
         TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
-        c.text = "CURRENCY: " + (int)currency;
+        c.text = ((int)currency).ToString();
         playerMenu.SetActive(true);
         dead = true;
     }
@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart() {
         playerMenu.SetActive(false);
+        GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>().text = "0m";
         GameObject targetObject = GameObject.FindWithTag("Cart");
         Vector3 targetPosition = targetObject.transform.position;
         Quaternion targetRotation = targetObject.transform.rotation;
@@ -93,4 +94,24 @@ public class GameManager : MonoBehaviour
         distanceTraveled = 0;
 
     }
+    private string FormatNumber(int number)
+    {
+        if (number >= 1_000_000_000)
+        {
+            return $"{(double)number / 1_000_000_000:N1}B";
+        }
+        else if (number >= 1_000_000)
+        {
+            return $"{(double)number / 1_000_000:N1}M";
+        }
+        else if (number >= 1_000)
+        {
+            return $"{(double)number / 1_000:N1}k";
+        }
+        else
+        {
+            return number.ToString("N0");
+        }
+    }
 }
+
