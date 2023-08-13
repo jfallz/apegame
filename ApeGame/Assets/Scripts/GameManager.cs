@@ -79,6 +79,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void Restart() {
+        print("restarting");
         playerMenu.SetActive(false);
         GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>().text = "0m";
         GameObject targetObject = GameObject.FindWithTag("Cart");
