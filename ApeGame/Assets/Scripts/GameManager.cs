@@ -5,6 +5,9 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip clip;
+
     public CannonFire scriptRef;
     public int distanceTraveled, distanceBest;
     // ----
@@ -73,6 +76,7 @@ public class GameManager : MonoBehaviour
         c.text = ((int)currency).ToString();
         playerMenu.SetActive(true);
         dead = true;
+        GameObject.Find("deathMenu").GetComponent<Animator>().Play("PopIn");
     }
 
     public void ShopMenu() {
@@ -98,6 +102,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void Confetti() {
+        
+        audioSource.PlayOneShot(clip);
+        
         GameObject blastConfetti = Instantiate(confettiPrefabs[0], GameObject.FindWithTag("Player").transform.position, Quaternion.identity);
         blastConfetti.GetComponent<Transform>().localScale = new Vector3(50f, 50f, 50f);
         confettiArray.Add(blastConfetti);
