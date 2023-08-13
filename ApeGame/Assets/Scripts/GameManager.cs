@@ -56,9 +56,11 @@ public class GameManager : MonoBehaviour
 
     public void statTrack() {
         GameObject p = GameObject.FindWithTag("Player");
-        float speed = p.GetComponent<Rigidbody>().velocity.magnitude;
+        int speed = (int) (p.GetComponent<Rigidbody>().velocity.magnitude / 3f);
         distanceTraveled = (int)(((p.transform.position.z) - startingDistance) / 3f);
         TextMeshProUGUI d = GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI s = GameObject.Find("SPEED").GetComponent<TextMeshProUGUI>();
+        s.text = speed + "m/s";
         d.text = distanceTraveled > 9999 ? FormatNumber(distanceTraveled) + "m" : distanceTraveled + "m";
         if(speed > maxSpeed) {
             maxSpeed = speed;
@@ -72,13 +74,15 @@ public class GameManager : MonoBehaviour
         TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
         c.text = ((int)currency).ToString();
         playerMenu.SetActive(true);
+        audioSource.PlayOneShot(clip2);
+        // if new personal best
         if(distanceTraveled > distanceBest) {
             distanceBest = distanceTraveled;
             Confetti();
             playerMenu.GetComponent<Animator>().Play("PopIn");
             newBest.SetActive(true);
-            audioSource.PlayOneShot(clip2);
         }
+        // ------
         dead = true;
     }
 

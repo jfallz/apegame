@@ -23,6 +23,7 @@ public class CannonFire : MonoBehaviour
     private Coroutine intensityCoroutine;
     public float forceMult = 5000;
     private MeshMaskScriptUI powerBar;
+    private bool tickActive = false;
 
     public void Start() {
         powerBar = GameObject.Find("PowerBar").GetComponent<MeshMaskScriptUI>();
@@ -47,6 +48,11 @@ public class CannonFire : MonoBehaviour
                 Aiming = false;
                 Fire();
             }
+        }
+
+        if(!tickActive) {
+            transform.GetComponent<tick>().enabled = true;
+            tickActive = true;
         }
     }
 
