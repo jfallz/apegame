@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     private bool dead = false;
     // ----
     public GameObject[] confettiPrefabs;
+    // ----
+    public AudioClip[] ButtonSounds;
+    // ----
     private List<GameObject> confettiArray = new List<GameObject>();
     public void Start() {
         distanceTraveled = 0;
@@ -116,6 +119,14 @@ public class GameManager : MonoBehaviour
         GameObject blastConfetti = Instantiate(confettiPrefabs[0], GameObject.FindWithTag("Player").transform.position, Quaternion.identity);
         blastConfetti.GetComponent<Transform>().localScale = new Vector3(50f, 50f, 50f);
         confettiArray.Add(blastConfetti);
+    }
+
+    public void ButtonPress1() {
+        audioSource.PlayOneShot(ButtonSounds[0]);
+    }
+
+    public void ButtonPress2() {
+        audioSource.PlayOneShot(ButtonSounds[1]);
     }
 
     private string FormatNumber(int number)
