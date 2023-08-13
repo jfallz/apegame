@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip clip;
+    public AudioClip clip2;
 
     public CannonFire scriptRef;
     public int distanceTraveled, distanceBest;
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour
             Confetti();
             playerMenu.GetComponent<Animator>().Play("PopIn");
             newBest.SetActive(true);
+            audioSource.PlayOneShot(clip2);
         }
         dead = true;
     }
