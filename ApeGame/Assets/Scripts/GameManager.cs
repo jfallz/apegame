@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public float TimeT = 0f;
     private bool inFlight = false; 
     private bool launched = false;
-    public GameObject speedometer;
+    public GameObject speedometer, newBest;
     public float min = 317f;
     public float max = 45f;
     private bool dead = false;
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     public void statTrack() {
         GameObject p = GameObject.FindWithTag("Player");
         float speed = p.GetComponent<Rigidbody>().velocity.magnitude;
-        distanceTraveled = (int)(p.transform.position.z) - startingDistance;
+        distanceTraveled = (int)(((p.transform.position.z) - startingDistance) / 3f);
         TextMeshProUGUI d = GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>();
         d.text = distanceTraveled > 9999 ? FormatNumber(distanceTraveled) + "m" : distanceTraveled + "m";
         if(speed > maxSpeed) {
@@ -67,16 +67,17 @@ public class GameManager : MonoBehaviour
             maxDistance = distanceTraveled;
     }
     public void Death() {
-        if(distanceTraveled > distanceBest) {
-            distanceBest = distanceTraveled;
-            Confetti();
-        }
         currency += distanceTraveled * .25f;
         TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
         c.text = ((int)currency).ToString();
         playerMenu.SetActive(true);
+        if(distanceTraveled > distanceBest) {
+            distanceBest = distanceTraveled;
+            Confetti();
+            playerMenu.GetComponent<Animator>().Play("PopIn");
+            newBest.SetActive(true);
+        }
         dead = true;
-        GameObject.Find("deathMenu").GetComponent<Animator>().Play("PopIn");
     }
 
     public void ShopMenu() {
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
     public void Restart() {
         print("restarting");
         playerMenu.SetActive(false);
+        newBest.SetActive(false);
         GameObject.Find("DISTANCE").GetComponent<TextMeshProUGUI>().text = "0m";
         GameObject targetObject = GameObject.FindWithTag("Cart");
         Vector3 targetPosition = targetObject.transform.position;
