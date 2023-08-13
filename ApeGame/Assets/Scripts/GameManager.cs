@@ -6,7 +6,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public CannonFire scriptRef;
-    public int distanceTraveled = 0;
+    public int distanceTraveled, distanceBest;
     // ----
     public float maxDistance = 0f;
     public float maxSpeed = 0f;
@@ -24,10 +24,13 @@ public class GameManager : MonoBehaviour
     public float min = 317f;
     public float max = 45f;
     private bool dead = false;
-
-    // public void Start() {
-    //     scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
-    // }
+    // ----
+    public GameObject[] confettiPrefabs;
+    private List<GameObject> confettiArray = new List<GameObject>();
+    public void Start() {
+        distanceTraveled = 0;
+        distanceBest = 0;
+    }
 
     public void FixedUpdate() {
         scriptRef = GameObject.Find("Rotation").GetComponent<CannonFire>();
@@ -43,14 +46,6 @@ public class GameManager : MonoBehaviour
                 if(rb.velocity.magnitude < 1 && !dead) 
                     Death();
             }
-
-            // speedometer
-            // float angle = min - (rb.velocity.magnitude / 100f);
-
-            // speedometer.transform.eulerAngles = new Vector3(speedometer.transform.eulerAngles.x,
-            //                                                 speedometer.transform.eulerAngles.y,
-            //                                                 speedometer.transform.eulerAngles.z - angle);
-            // speed = rb.velocity.magnitude;
             statTrack();
         }
     }
@@ -69,6 +64,10 @@ public class GameManager : MonoBehaviour
             maxDistance = distanceTraveled;
     }
     public void Death() {
+        if(distanceTraveled > distanceBest) {
+            distanceBest = distanceTraveled;
+            Confetti();
+        }
         currency += distanceTraveled * .25f;
         TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
         c.text = ((int)currency).ToString();
@@ -87,13 +86,22 @@ public class GameManager : MonoBehaviour
         Quaternion targetRotation = targetObject.transform.rotation;
         Destroy(targetObject);
         Destroy(GameObject.FindWithTag("Player"));
-            // Instantiate the prefab at the target position with the same rotation.
         GameObject newObject = Instantiate(prefabToInstantiate, targetPosition, targetRotation);
         launched = false;
         dead = false;
+        for(int i = confettiArray.Count - 1; i >= 0; --i) {
+            Destroy(confettiArray[i]);
+            confettiArray.RemoveAt(i);
+        }
         distanceTraveled = 0;
-
     }
+
+    public void Confetti() {
+        GameObject blastConfetti = Instantiate(confettiPrefabs[0], GameObject.FindWithTag("Player").transform.position, Quaternion.identity);
+        blastConfetti.GetComponent<Transform>().localScale = new Vector3(50f, 50f, 50f);
+        confettiArray.Add(blastConfetti);
+    }
+
     private string FormatNumber(int number)
     {
         if (number >= 1_000_000_000)
