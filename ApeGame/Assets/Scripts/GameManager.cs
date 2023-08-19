@@ -11,10 +11,19 @@ public class GameManager : MonoBehaviour
 
     public CannonFire scriptRef;
     public int distanceTraveled, distanceBest;
+
     // ----
+    // All time max statistics:
     public float maxDistance = 0f;
     public float maxSpeed = 0f;
     public float maxAltitude = 0f;
+    // ----
+
+    // ---- 
+    // Current run statistics:
+    public float currMaxDistance = 0f;
+    public float currMaxSpeed = 0f;
+    public float currMaxAltitude = 0f;
     // ----
     private int startingDistance;
     [SerializeField] public float currency = 0f;
@@ -36,7 +45,9 @@ public class GameManager : MonoBehaviour
     private List<GameObject> confettiArray = new List<GameObject>();
     public void Start() {
         distanceTraveled = 0;
-        distanceBest = 0;
+        maxDistance = 0;
+        maxSpeed = 0;
+        maxAltitude = 0;
     }
 
     public void FixedUpdate() {
@@ -65,27 +76,38 @@ public class GameManager : MonoBehaviour
         TextMeshProUGUI s = GameObject.Find("SPEED").GetComponent<TextMeshProUGUI>();
         s.text = speed + "m/s";
         d.text = distanceTraveled > 9999 ? FormatNumber(distanceTraveled) + "m" : distanceTraveled + "m";
-        if(speed > maxSpeed) {
-            maxSpeed = speed;
-        }
+        int altitude = (int) ((p.transform.position.y - 121.7634f  ) / 3f);
 
-        if(distanceTraveled > maxDistance)
-            maxDistance = distanceTraveled;
+        if(speed > currMaxSpeed)
+            currMaxSpeed = (float)speed;
+
+        if(distanceTraveled > currMaxDistance)
+            currMaxDistance = (float)distanceTraveled;
+
+        if(altitude > currMaxAltitude)
+            currMaxAltitude = (float)altitude;
     }
     public void Death() {
         currency += distanceTraveled * .25f;
         TextMeshProUGUI c = GameObject.Find("CURRENCY").GetComponent<TextMeshProUGUI>();
         c.text = ((int)currency).ToString();
         playerMenu.SetActive(true);
+        Scores();
         audioSource.PlayOneShot(clip2);
         // if new personal best
-        if(distanceTraveled > distanceBest) {
-            distanceBest = distanceTraveled;
+        if(currMaxDistance > maxDistance) {
+            maxDistance = currMaxDistance;
             Confetti();
             playerMenu.GetComponent<Animator>().Play("PopIn");
             newBest.SetActive(true);
+        } else if(currMaxAltitude > maxAltitude) {
+            maxAltitude = currMaxAltitude;
+        } else if(currMaxSpeed > maxSpeed) {
+            maxSpeed = currMaxSpeed;
         }
-        // ------
+        currMaxSpeed = 0f;
+        currMaxAltitude = 0f;
+        currMaxSpeed = 0f;
         dead = true;
     }
 
@@ -110,6 +132,17 @@ public class GameManager : MonoBehaviour
             confettiArray.RemoveAt(i);
         }
         distanceTraveled = 0;
+    }
+
+    public void Scores() {
+        // max distance, height, speed, and bonus will go here
+        TextMeshProUGUI distance = GameObject.Find("DISTANCEend").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI speed = GameObject.Find("SPEEDend").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI altitude = GameObject.Find("ALTITUDEend").GetComponent<TextMeshProUGUI>();
+
+        distance.text = "Distance: " + currMaxDistance + "m";
+        speed.text = "Speed: " + currMaxSpeed + "m/s";
+        altitude.text = "Altitude: " + currMaxAltitude + "m";
     }
 
     public void Confetti() {
