@@ -179,7 +179,7 @@ Material:
     - _ReflectionPower: 0.32
     - _RippleSpeed: 0.1
     - _ShallowFalloff: 0.4
-    - _Smoothness: 2.5
+    - _Smoothness: 2.92
     - _SmoothnessTextureChannel: 0
     - _Specular: 0
     - _SpecularHighlights: 1
@@ -216,10 +216,10 @@ Material:
     - _Wave3DTilingTufts: -0.04
     - _WaveAmplitude: 0.505
     - _WaveDirection: 1.54
-    - _WaveFoamOpacity: 0.014
+    - _WaveFoamOpacity: 0
     - _WaveNoiseAmount: 2
     - _WaveNoiseScale: 30
-    - _WaveSpeed: 0.062
+    - _WaveSpeed: 0.74
     - _WaveTiling: 0.21
     - _WaveTiling1: 0.2
     - _WaveTiling2: 0.07

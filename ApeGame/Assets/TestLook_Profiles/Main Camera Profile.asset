@@ -1550,7 +1550,7 @@ MonoBehaviour:
     value: 3
   ColorReduction:
     overrideState: 1
-    value: 70
+    value: 1871
 --- !u!114 &4759118235106583919
 MonoBehaviour:
   m_ObjectHideFlags: 3
