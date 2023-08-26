@@ -12,7 +12,7 @@ public class WingWait : MonoBehaviour
 
     	private IEnumerator WaitAndExecute()
     {
-        yield return new WaitForSeconds(1.0f); // Wait for 2 seconds
+        yield return new WaitForSeconds(2.0f); // Wait for 2 seconds
         
         // Execute the action after waiting
         Debug.Log("Action executed after 2 seconds!");
