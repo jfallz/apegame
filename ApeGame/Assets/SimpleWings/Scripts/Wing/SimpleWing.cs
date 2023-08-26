@@ -4,6 +4,7 @@
 //
 
 using UnityEngine;
+using System.Collections;
 
 public class SimpleWing : MonoBehaviour
 {
